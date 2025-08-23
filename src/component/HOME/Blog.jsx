@@ -17,7 +17,7 @@ export default function Blog() {
       id: 1,
       title: "The Future of Digital Dental care: How Gdc is Leading the Revolution",
       excerpt:
-        "Discover how Gdc's innovative approach to digital health cards is transforming the Dental care landscape and making quality medical care accessible to millions.",
+        "Discover how Gdc's innovative approach to digital health cards is transforming the Dental care landscape and making quality   accessible to millions.",
       author: "Dr. Sarah Johnson",
       date: "Dec 15, 2024",
       readTime: "8 min read",

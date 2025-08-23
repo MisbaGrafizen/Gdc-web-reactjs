@@ -194,14 +194,14 @@ export default function Footer() {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          303, Om Decora, 9 Square 150ft ring road nana mauva
+                          813, Om Decora, 9 Square 150ft ring road nana mauva
                           Rajkot, Gujarat 360003
                         </a>
                       </li>
                       <li>
                         <a href="tel:+919169191291" className="mb-3">
                           <span className="ak-font-20">Phone : </span>
-                          +91 8849642442
+                          +91 234567
                         </a>
                       </li>
                       <li>

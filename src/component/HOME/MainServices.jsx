@@ -209,94 +209,99 @@ import { useNavigate } from "react-router-dom";
 export default function MainServices() {
   const navigate = useNavigate();
   const [activeService, setActiveService] = useState(0);
+const services = [
+  {
+    id: 0,
+    title: "Dental Consultation",
+    shortDesc: "General & specialist dental checkups",
+    fullDesc:
+      "Comprehensive dental consultation with general dentists and specialists like orthodontists, endodontists, and oral surgeons.",
+    icon: Stethoscope,
+        features: [
+      "Digital X-rays & OPG",
+      "3D CBCT scanning",
+      "Intraoral cameras",
+      "Cephalometric analysis",
+    ],
+    stats: { Dentists: "15+", Specialties: "8+" },
+  },
+  {
+    id: 1,
+    title: "Dental Imaging & Diagnostics",
+    shortDesc: "X-rays and advanced dental scans",
+    fullDesc:
+      "State-of-the-art diagnostic facilities including digital X-rays, OPG, CBCT scans, and intraoral cameras for accurate treatment planning.",
+    icon: FlaskConical,
+    features: [
+      "Digital X-rays & OPG",
+      "3D CBCT scanning",
+      "Intraoral cameras",
+      "Cephalometric analysis",
+    ],
+    stats: { Scans: "5000+", Accuracy: "99.9%" },
+  },
+  {
+    id: 2,
+    title: "Orthodontics & Braces",
+    shortDesc: "Teeth alignment and smile correction",
+    fullDesc:
+      "Specialized orthodontic treatments including metal braces, ceramic braces, clear aligners, and retainers for children & adults.",
+    icon: HeartPulse,
+    features: [
+      "Metal & ceramic braces",
+      "Invisible aligners (Invisalign)",
+      "Lingual braces",
+      "Retainers & smile design",
+    ],
+    stats: { Patients: "2000+", SuccessRate: "92%" },
+  },
+  {
+    id: 3,
+    title: "Preventive Dentistry",
+    shortDesc: "Cleaning, scaling & preventive care",
+    fullDesc:
+      "Regular dental cleaning, scaling, fluoride therapy, sealants, and preventive checkups to maintain long-term oral health.",
+    icon: ClipboardList,
+    features: [
+      "Scaling & polishing",
+      "Fluoride treatment",
+      "Pit & fissure sealants",
+      "Routine oral health checkups",
+    ],
+    stats: { Patients: "3000+", HygieneSuccess: "95%" },
+  },
+  {
+    id: 4,
+    title: "Implants & Restorations",
+    shortDesc: "Permanent tooth replacements",
+    fullDesc:
+      "Advanced dental implants, crowns, bridges, and dentures designed to restore function and aesthetics.",
+    icon: Home,
+    features: [
+      "Single & multiple implants",
+      "Crowns and bridges",
+      "Removable & fixed dentures",
+      "Full-mouth rehabilitation",
+    ],
+    stats: { Implants: "1500+", SuccessRate: "98%" },
+  },
+  {
+    id: 5,
+    title: "Pediatric Dentistry",
+    shortDesc: "Gentle care for children’s teeth",
+    fullDesc:
+      "Dedicated pediatric dentistry for children, including preventive treatments, cavity care, and habit correction.",
+    icon: Brain,
+    features: [
+      "Child-friendly checkups",
+      "Fluoride & sealants for kids",
+      "Habit-breaking appliances",
+      "Early orthodontic care",
+    ],
+    stats: { KidsTreated: "1200+", ParentSatisfaction: "97%" },
+  },
+];
 
-  const services = [
-    {
-      id: 0,
-      title: "Doctor Consultation",
-      shortDesc: "Consult with a range of medical specialists",
-      fullDesc: "Comprehensive consultation with experienced doctors including general physicians, specialists like cardiologists, dermatologists, and more.",
-      icon: Stethoscope,
-      features: [
-        "General Physician",
-        "Cardiologist, Dentist, Dermatologist",
-        "ENT, Gastroenterologist, Gynecologist",
-        "Psychiatrist, Pulmonologist, Pediatrician",
-      ],
-      stats: { Departments: "20+", Specialists: "40+" },
-    },
-    {
-      id: 1,
-      title: "Laboratory",
-      shortDesc: "Diagnostic tests and screenings",
-      fullDesc: "Modern lab testing for blood, urine, thyroid, infections, and more. Get fast and accurate results with expert interpretation.",
-      icon: FlaskConical,
-      features: [
-        "Blood tests (CBC, lipid profile)",
-        "Urine and stool analysis",
-        "Thyroid & hormonal tests",
-        "Infection screenings (COVID, Dengue)"
-      ],
-      stats: { Tests: "100+", Accuracy: "99.9%" },
-    },
-    {
-      id: 2,
-      title: "Physiotherapy",
-      shortDesc: "Rehabilitation and pain management",
-      fullDesc: "Personalized physiotherapy for pain relief, injury recovery, and chronic conditions including neurological therapy.",
-      icon: HeartPulse,
-      features: [
-        "Back, neck, joint pain management",
-        "Post-surgery rehabilitation",
-        "Neurological & pediatric physio",
-        "Sports injury therapy",
-      ],
-      stats: { Patients: "800+", RecoveryRate: "85%" },
-    },
-    {
-      id: 3,
-      title: "Clinical Nutrition",
-      shortDesc: "Diet plans & nutrition therapy",
-      fullDesc: "Customized meal plans and diet advice for weight management, PCOS, pregnancy, and chronic conditions.",
-      icon: ClipboardList,
-      features: [
-        "Weight & diabetes management",
-        "Nutrition for kids, elderly, pregnant",
-        "PCOS/PCOD support",
-        "Sports & personalized meal planning",
-      ],
-      stats: { Clients: "500+", SuccessRate: "90%" },
-    },
-    {
-      id: 4,
-      title: "Home Care",
-      shortDesc: "Medical care at your doorstep",
-      fullDesc: "Home visits by doctors/nurses, physiotherapy at home, elderly care, and more—quality care without leaving home.",
-      icon: Home,
-      features: [
-        "Doctor/Nurse visits",
-        "Physiotherapy at home",
-        "Medication administration",
-        "Chronic illness & elderly care",
-      ],
-      stats: { Visits: "1000+", AreasCovered: "30+" },
-    },
-    {
-      id: 5,
-      title: "Mental Health & Counseling",
-      shortDesc: "Emotional and psychological support",
-      fullDesc: "Confidential counseling for stress, anxiety, addiction, family or relationship issues, and overall mental wellness.",
-      icon: Brain,
-      features: [
-        "Psychologist consultations",
-        "Stress, anxiety, depression help",
-        "Family & relationship therapy",
-        "Substance abuse support",
-      ],
-      stats: { Sessions: "300+", Satisfaction: "95%" },
-    },
-   
-  ];
 
   const handleService = () => navigate("/services");
 

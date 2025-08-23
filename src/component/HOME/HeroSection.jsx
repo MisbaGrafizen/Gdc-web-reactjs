@@ -67,7 +67,7 @@ export default function HeroSection() {
                                 future
                                 of
                                 <b className=" font-[700] text-[#fff] pl-[6px]">
-                                    DENTAL CARDS
+                                    DENTAL CARE
                                 </b>
 
                             </h1>
@@ -77,8 +77,8 @@ export default function HeroSection() {
                         <div className="space-y-4 max-w-[500px]">
                             <p className="text-[15px] text-[#fff]   !font-[400] leading-tight">
                                 Experience the next generation of Dental care with{" "}
-                                <span className="text-[#fff] font-[500]">Gdc's innovative Dental cards</span>. We're transforming
-                                how you access medical care.
+                                <span className="text-[#fff] font-[500]">Gdc's innovative Dental </span>. We're transforming
+                                how you access  .
                             </p>
                             <div className="flex items-center gap-4">
                                 <div className="flex items-center gap-2">
