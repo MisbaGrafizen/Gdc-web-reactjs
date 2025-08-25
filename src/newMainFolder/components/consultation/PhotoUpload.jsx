@@ -84,7 +84,7 @@ const PhotoUpload = ({ formData, updateFormData, errors, updateErrors, onNext, o
         <p className="text-gray-600 mb-4">
           Upload photos as per our photo guide. At least 3 photos required, maximum 12.
         </p>
-        <div className="bg-blue-50 p-4 rounded-xl border border-blue-200">
+        <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
           <div className="flex items-start">
             <Info className="w-5 h-5 text-blue-600 mt-0.5 mr-2" />
             <div className="text-sm text-blue-800">
@@ -114,12 +114,12 @@ const PhotoUpload = ({ formData, updateFormData, errors, updateErrors, onNext, o
       </div>
 
       {localErrors.photos && (
-        <div className="bg-red-50 border border-red-200 rounded-xl p-4">
+        <div className="bg-red-50 border border-red-200 rounded-lg p-4">
           <p className="text-red-600 text-sm">{localErrors.photos}</p>
         </div>
       )}
 
-      <div className="bg-gray-50 p-4 rounded-xl">
+      <div className="bg-gray-50 p-4 rounded-lg">
         <p className="text-sm text-gray-600">
           Photos uploaded: <span className="font-semibold">{photoCount}/12</span>
           {photoCount >= 3 && <span className="text-green-600 ml-2">✓ Minimum requirement met</span>}
@@ -132,7 +132,7 @@ const PhotoUpload = ({ formData, updateFormData, errors, updateErrors, onNext, o
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={onPrev}
-          className="px-8 py-3 rounded-xl border border-gray-300 text-gray-700 font-semibold hover:bg-gray-50 transition-all"
+          className="px-8 py-3 rounded-lg border border-gray-300 text-gray-700 font-semibold hover:bg-gray-50 transition-all"
         >
           Previous
         </motion.button>
@@ -141,9 +141,9 @@ const PhotoUpload = ({ formData, updateFormData, errors, updateErrors, onNext, o
           whileTap={{ scale: 0.95 }}
           onClick={handleNext}
           disabled={!isFormValid}
-          className={`px-8 py-3 rounded-xl font-semibold transition-all ${
+          className={`px-8 py-3 rounded-lg font-semibold transition-all ${
             isFormValid
-              ? "bg-gradient-to-r from-teal-500 to-indigo-600 text-white shadow-lg hover:shadow-xl"
+              ? "bg-gradient-to-br from-[#1b2644] to-blue-600  text-white shadow-lg hover:shadow-xl"
               : "bg-gray-300 text-gray-500 cursor-not-allowed"
           }`}
         >
@@ -158,7 +158,7 @@ const PhotoSlot = ({ slot, photo, onUpload, onRemove, error }) => {
   return (
     <motion.div
       whileHover={{ scale: 1.02 }}
-      className="bg-white rounded-xl border-2 border-dashed border-gray-300 p-4 text-center hover:border-gray-400 transition-all"
+      className="bg-white rounded-lg border-2 border-dashed border-gray-300 p-4 text-center hover:border-gray-400 transition-all"
     >
       <div className="relative">
         {photo ? (
@@ -199,7 +199,7 @@ const PhotoSlot = ({ slot, photo, onUpload, onRemove, error }) => {
         {!photo && (
           <button
             onClick={() => document.getElementById(`photo-${slot.id}`).click()}
-            className="mt-2 text-xs text-teal-600 hover:text-teal-700 font-medium"
+            className="mt-2 text-xs text-blue-900 hover:text-teal-700 font-medium"
           >
             Click to upload
           </button>

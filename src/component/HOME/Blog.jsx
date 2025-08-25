@@ -104,7 +104,7 @@ export default function Blog() {
         border: "border-amber-200",
         accent: "bg-amber-500",
         text: "text-amber-700",
-        button: "bg-teal-600 hover:bg-amber-700",
+        button: "bg-blue-900 hover:bg-amber-700",
         ribbon: "bg-gradient-to-r from-amber-400 to-orange-500",
       },
       rose: {

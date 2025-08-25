@@ -29,14 +29,14 @@ const StickyTabs = ({ activeTab, setActiveTab }) => {
               whileTap={{ scale: 0.95 }}
               onClick={() => scrollToSection(tab.id)}
               className={`relative py-4 px-2 font-medium whitespace-nowrap transition-colors ${
-                activeTab === tab.id ? "text-teal-600" : "text-gray-600 hover:text-gray-900"
+                activeTab === tab.id ? "text-[#05206d]" : "text-gray-600 hover:text-gray-900"
               }`}
             >
               {tab.label}
               {activeTab === tab.id && (
                 <motion.div
                   layoutId="activeTab"
-                  className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-teal-500 to-indigo-600"
+                  className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-br from-[#1b2644] to-blue-600 "
                 />
               )}
             </motion.button>

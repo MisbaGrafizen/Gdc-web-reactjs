@@ -19,9 +19,9 @@ const Stepper = ({ currentStep }) => {
               whileHover={{ scale: 1.1 }}
               className={`flex items-center justify-center w-10 h-10 rounded-full border-2 ${
                 currentStep > step.number
-                  ? "bg-teal-500 border-teal-500 text-white"
+                  ? "bg-blue-800 border-blue-800 text-white"
                   : currentStep === step.number
-                    ? "border-teal-500 text-teal-500 bg-white"
+                    ? "border-blue-800 text-blue-800 bg-white"
                     : "border-gray-300 text-gray-400 bg-white"
               }`}
             >
@@ -39,7 +39,7 @@ const Stepper = ({ currentStep }) => {
             </div>
 
             {index < steps.length - 1 && (
-              <div className={`flex-1 h-0.5 mx-4 ${currentStep > step.number ? "bg-teal-500" : "bg-gray-300"}`} />
+              <div className={`flex-1 h-0.5 mx-4 ${currentStep > step.number ? "bg-blue-900" : "bg-gray-300"}`} />
             )}
           </div>
         ))}

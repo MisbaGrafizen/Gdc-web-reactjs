@@ -82,9 +82,9 @@ const TreatmentMedical = ({ formData, updateFormData, errors, updateErrors, onNe
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               onClick={() => handleTreatmentChange(treatment)}
-              className={`p-4 rounded-xl border-2 cursor-pointer transition-all ${
+              className={`p-4 rounded-lg border-2 cursor-pointer transition-all ${
                 formData.treatment === treatment
-                  ? "border-teal-500 bg-teal-50"
+                  ? "border-blue-900 bg-teal-50"
                   : "border-gray-200 hover:border-gray-300"
               }`}
             >
@@ -95,7 +95,7 @@ const TreatmentMedical = ({ formData, updateFormData, errors, updateErrors, onNe
                   value={treatment}
                   checked={formData.treatment === treatment}
                   onChange={() => handleTreatmentChange(treatment)}
-                  className="text-teal-500 focus:ring-teal-500"
+                  className="text-blue-900 focus:ring-blue-900"
                 />
                 <label className="ml-3 font-medium text-gray-900 cursor-pointer">{treatment}</label>
               </div>
@@ -117,9 +117,9 @@ const TreatmentMedical = ({ formData, updateFormData, errors, updateErrors, onNe
             value={formData.chiefComplaint}
             onChange={(e) => updateFormData({ chiefComplaint: e.target.value })}
             rows={4}
-            className={`w-full px-4 py-3 rounded-xl border ${
+            className={`w-full px-4 py-3 rounded-lg border ${
               localErrors.chiefComplaint ? "border-red-300" : "border-gray-300"
-            } focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all`}
+            } focus:ring-1 focus:ring-blue-900 focus:border-transparent transition-all`}
             placeholder="Please describe your dental concern..."
           />
           {localErrors.chiefComplaint && <p className="text-red-500 text-sm mt-1">{localErrors.chiefComplaint}</p>}
@@ -153,7 +153,7 @@ const TreatmentMedical = ({ formData, updateFormData, errors, updateErrors, onNe
           value={formData.medicalHistory}
           onChange={(e) => updateFormData({ medicalHistory: e.target.value })}
           rows={3}
-          className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all"
+          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-900 focus:border-transparent transition-all"
           placeholder="Any relevant medical history..."
         />
       </div>
@@ -189,7 +189,7 @@ const TreatmentMedical = ({ formData, updateFormData, errors, updateErrors, onNe
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={onPrev}
-          className="px-8 py-3 rounded-xl border border-gray-300 text-gray-700 font-semibold hover:bg-gray-50 transition-all"
+          className="px-8 py-3 rounded-lg border border-gray-300 text-gray-700 font-semibold hover:bg-gray-50 transition-all"
         >
           Previous
         </motion.button>
@@ -198,9 +198,9 @@ const TreatmentMedical = ({ formData, updateFormData, errors, updateErrors, onNe
           whileTap={{ scale: 0.95 }}
           onClick={handleNext}
           disabled={!isFormValid}
-          className={`px-8 py-3 rounded-xl font-semibold transition-all ${
+          className={`px-8 py-3 rounded-lg font-semibold transition-all ${
             isFormValid
-              ? "bg-gradient-to-r from-teal-500 to-indigo-600 text-white shadow-lg hover:shadow-xl"
+              ? "bg-gradient-to-br from-[#1b2644] to-blue-600  text-white shadow-lg hover:shadow-xl"
               : "bg-gray-300 text-gray-500 cursor-not-allowed"
           }`}
         >
@@ -215,7 +215,7 @@ const FileUploadSection = ({ title, type, files, onFileUpload, onRemoveFile, acc
   return (
     <div>
       <label className="block text-sm font-medium text-gray-700 mb-2">{title} (Optional)</label>
-      <div className="border-2 border-dashed border-gray-300 rounded-xl p-6 text-center hover:border-gray-400 transition-colors">
+      <div className="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-gray-400 transition-colors">
         <input
           type="file"
           multiple
@@ -252,7 +252,7 @@ const FileUploadSection = ({ title, type, files, onFileUpload, onRemoveFile, acc
 
 const MedicalQuestion = ({ question, value, details, onToggle, onDetailsChange }) => {
   return (
-    <div className="bg-gray-50 p-4 rounded-xl">
+    <div className="bg-gray-50 p-4 rounded-lg">
       <div className="flex items-center space-x-4 mb-3">
         <span className="text-sm font-medium text-gray-700">{question}</span>
         <div className="flex space-x-4">
@@ -262,7 +262,7 @@ const MedicalQuestion = ({ question, value, details, onToggle, onDetailsChange }
               name={question}
               checked={value === true}
               onChange={() => onToggle(true)}
-              className="text-teal-500 focus:ring-teal-500"
+              className="text-blue-900 focus:ring-blue-900"
             />
             <span className="ml-2 text-sm text-gray-700">Yes</span>
           </label>
@@ -272,7 +272,7 @@ const MedicalQuestion = ({ question, value, details, onToggle, onDetailsChange }
               name={question}
               checked={value === false}
               onChange={() => onToggle(false)}
-              className="text-teal-500 focus:ring-teal-500"
+              className="text-blue-900 focus:ring-blue-900"
             />
             <span className="ml-2 text-sm text-gray-700">No</span>
           </label>
@@ -286,7 +286,7 @@ const MedicalQuestion = ({ question, value, details, onToggle, onDetailsChange }
           value={details}
           onChange={(e) => onDetailsChange(e.target.value)}
           rows={2}
-          className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all text-sm"
+          className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-900 focus:border-transparent transition-all text-sm"
           placeholder="Please provide details..."
         />
       )}

@@ -256,7 +256,7 @@ export default function GdcCardPopup({ isOpen, onClose }) {
                                             whileTap={{ scale: 0.98 }}
                                             onClick={handleNext}
                                             disabled={cardNumber.length !== 4 || hscCode.length !== 3 || isLoading}
-                                            className={`w-full py-3 rounded-xl font-[600] text-base transition-all duration-300 ${cardNumber.length === 4 && hscCode.length === 3 && !isLoading
+                                            className={`w-full py-3 rounded-lg font-[600] text-base transition-all duration-300 ${cardNumber.length === 4 && hscCode.length === 3 && !isLoading
                                                     ? "bg-gradient-to-r from-[#13008E] to-blue-700 text-white shadow-lg hover:shadow-xl"
                                                     : "bg-gray-300 text-gray-500 cursor-not-allowed"
                                                 }`}
@@ -339,7 +339,7 @@ export default function GdcCardPopup({ isOpen, onClose }) {
                                                 whileTap={{ scale: 0.98 }}
                                                 onClick={handleOtpSubmit}
                                                 disabled={otp.join("").length !== 6 || isLoading}
-                                                className={`w-full py-3 rounded-xl font-[600] text-base transition-all duration-300 ${otp.join("").length === 6 && !isLoading
+                                                className={`w-full py-3 rounded-lg font-[600] text-base transition-all duration-300 ${otp.join("").length === 6 && !isLoading
                                                         ? "bg-gradient-to-r from-[#13008E] to-blue-700 text-white shadow-lg hover:shadow-xl"
                                                         : "bg-gray-300 text-gray-500 cursor-not-allowed"
                                                     }`}

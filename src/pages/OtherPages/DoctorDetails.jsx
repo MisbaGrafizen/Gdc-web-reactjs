@@ -190,7 +190,7 @@ export default function DoctorDetails() {
 
                                 {/* Stats Grid */}
                                 <div className="grid grid-cols-4 gap-4 mb-6">
-                                    <div className="text-center p-4 bg-gray-50 rounded-xl">
+                                    <div className="text-center p-4 bg-gray-50 rounded-lg">
                                         <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2">
                                             <svg className="w-6 h-6 text-[#13008E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path
@@ -205,7 +205,7 @@ export default function DoctorDetails() {
                                         <p className="font-semibold">{doctor?.experience} Years</p>
                                     </div>
 
-                                    <div className="text-center p-4 bg-gray-50 rounded-xl">
+                                    <div className="text-center p-4 bg-gray-50 rounded-lg">
                                         <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2">
                                             <svg className="w-6 h-6 text-[#13008E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path d="M12 14l9-5-9-5-9 5 9 5z" />
@@ -222,7 +222,7 @@ export default function DoctorDetails() {
                                         <p className="font-semibold">{doctor?.qualifications?.length}</p>
                                     </div>
 
-                                    <div className="text-center p-4 bg-gray-50 rounded-xl">
+                                    <div className="text-center p-4 bg-gray-50 rounded-lg">
                                         <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2">
                                             <svg className="w-6 h-6 text-[#13008E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path
@@ -237,7 +237,7 @@ export default function DoctorDetails() {
                                         <p className="font-semibold">{doctor?.languagesSpoken?.length}</p>
                                     </div>
 
-                                    <div className="text-center p-4 bg-gray-50 rounded-xl">
+                                    <div className="text-center p-4 bg-gray-50 rounded-lg">
                                         <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2">
                                             <svg className="w-6 h-6 text-[#13008E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path
@@ -255,7 +255,7 @@ export default function DoctorDetails() {
 
                                 {/* Action Buttons */}
                                 <div className="flex space-x-4">
-                                    <button className="flex-1 flex items-center justify-center space-x-2 py-3 px-6 bg-blue-50 text-[#13008E] rounded-xl hover:bg-blue-100 transition-colors">
+                                    <button className="flex-1 flex items-center justify-center space-x-2 py-3 px-6 bg-blue-50 text-[#13008E] rounded-lg hover:bg-blue-100 transition-colors">
                                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path
                                                 strokeLinecap="round"
@@ -267,7 +267,7 @@ export default function DoctorDetails() {
                                         <span>Call</span>
                                     </button>
 
-                                    <button className="flex-1 flex items-center justify-center space-x-2 py-3 px-6 bg-blue-50 text-[#13008E] rounded-xl hover:bg-blue-100 transition-colors">
+                                    <button className="flex-1 flex items-center justify-center space-x-2 py-3 px-6 bg-blue-50 text-[#13008E] rounded-lg hover:bg-blue-100 transition-colors">
                                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path
                                                 strokeLinecap="round"
@@ -279,7 +279,7 @@ export default function DoctorDetails() {
                                         <span>Message</span>
                                     </button>
 
-                                    <button className="flex-1 flex items-center justify-center space-x-2 py-3 px-6 bg-blue-50 text-[#13008E] rounded-xl hover:bg-blue-100 transition-colors">
+                                    <button className="flex-1 flex items-center justify-center space-x-2 py-3 px-6 bg-blue-50 text-[#13008E] rounded-lg hover:bg-blue-100 transition-colors">
                                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path
                                                 strokeLinecap="round"
@@ -395,7 +395,7 @@ export default function DoctorDetails() {
                                         <h3 className="text-xl font-semibold text-gray-900 mb-6">Education & Qualifications</h3>
                                         <div className="space-y-4">
                                             {doctor?.qualifications?.map((item, index) => (
-                                                <div key={index} className="flex items-center p-6 border border-blue-200 rounded-xl bg-blue-50">
+                                                <div key={index} className="flex items-center p-6 border border-blue-200 rounded-lg bg-blue-50">
                                                     <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
                                                         <svg className="w-6 h-6 text-[#13008E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                             <path d="M12 14l9-5-9-5-9 5 9 5z" />
@@ -420,7 +420,7 @@ export default function DoctorDetails() {
                                                 </div>
                                             ))}
 
-                                            {/* <div className="flex items-center p-6 border border-blue-200 rounded-xl bg-blue-50">
+                                            {/* <div className="flex items-center p-6 border border-blue-200 rounded-lg bg-blue-50">
                                                 <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
                                                     <svg className="w-6 h-6 text-[#13008E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                         <path d="M12 14l9-5-9-5-9 5 9 5z" />
@@ -448,7 +448,7 @@ export default function DoctorDetails() {
 
                                     <div>
                                         <h3 className="text-xl font-semibold text-gray-900 mb-6">Professional Experience</h3>
-                                        <div className="bg-gray-50 rounded-xl p-6">
+                                        <div className="bg-gray-50 rounded-lg p-6">
                                             <div className="flex items-center mb-4">
                                                 <div className="w-16 h-16 bg-[#13008E] rounded-full flex items-center justify-center mr-4">
                                                     <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -485,7 +485,7 @@ export default function DoctorDetails() {
 
                             {activeTab === "reviews" && (
                                 <div className="space-y-6">
-                                    <div className="bg-gray-50 rounded-xl p-6">
+                                    <div className="bg-gray-50 rounded-lg p-6">
                                         <div className="flex items-center justify-between">
                                             <div>
                                                 <div className="flex items-baseline space-x-2 mb-2">
@@ -505,7 +505,7 @@ export default function DoctorDetails() {
                                         <h3 className="text-xl font-semibold text-gray-900 mb-6">Patient Reviews</h3>
                                         <div className="space-y-4">
                                             {reviews.map((review) => (
-                                                <div key={review.id} className="bg-white border rounded-xl p-6">
+                                                <div key={review.id} className="bg-white border rounded-lg p-6">
                                                     <div className="flex items-start space-x-4">
                                                         <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
                                                             <span className="text-[#13008E] font-semibold">{review.initial}</span>
@@ -533,7 +533,7 @@ export default function DoctorDetails() {
 
                             {activeTab === "availability" && (
                                 <div className="space-y-6">
-                                    <div className="bg-blue-50 rounded-xl p-6 border border-blue-200">
+                                    <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
                                         <div className="flex justify-between items-center">
                                             <div>
                                                 <h3 className="text-xl font-semibold text-blue-900 mb-1">Consultation Fee</h3>
@@ -545,7 +545,7 @@ export default function DoctorDetails() {
 
                                     <div>
                                         <h3 className="text-xl font-semibold text-gray-900 mb-4">Current Status</h3>
-                                        <div className="bg-green-50 rounded-xl p-6 border border-green-200">
+                                        <div className="bg-green-50 rounded-lg p-6 border border-green-200">
                                             <div className="flex items-center">
                                                 <div className="w-3 h-3 bg-green-500 rounded-full mr-3"></div>
                                                 <span className="text-green-800 font-semibold">{isDoctorAvailableToday(doctor) ? "Available Today" : "Not Available Today"}</span>
@@ -569,7 +569,7 @@ export default function DoctorDetails() {
                                         </div>
 
                                         {doctor?.availability && doctor.availability.length > 0 ? (
-                                            <div className="bg-gray-50 rounded-xl p-6 space-y-4">
+                                            <div className="bg-gray-50 rounded-lg p-6 space-y-4">
                                                 <h4 className="text-lg font-semibold text-gray-900">Doctor's Availability</h4>
 
                                                 {doctor.availability.map((item, index) => {
@@ -579,7 +579,7 @@ export default function DoctorDetails() {
                                                     return (
                                                         <div
                                                             key={index}
-                                                            className={`p-4 rounded-xl border ${isToday ? 'bg-green-50 border-green-300' : 'bg-white border-gray-200'}`}
+                                                            className={`p-4 rounded-lg border ${isToday ? 'bg-green-50 border-green-300' : 'bg-white border-gray-200'}`}
                                                         >
                                                             <div className="flex justify-between items-center mb-2">
                                                                 <h5 className="font-semibold text-gray-800">{item.day} {isToday && <span className="text-green-600">(Today)</span>}</h5>
@@ -599,7 +599,7 @@ export default function DoctorDetails() {
                                                 })}
                                             </div>
                                         ) : (
-                                            <div className="bg-gray-50 rounded-xl p-8 text-center">
+                                            <div className="bg-gray-50 rounded-lg p-8 text-center">
                                                 <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-4">
                                                     <svg className="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                         <path
@@ -622,11 +622,11 @@ export default function DoctorDetails() {
 
                                     </div>
 
-                                    <div className="bg-blue-50 rounded-xl p-6 border border-blue-200">
+                                    <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
                                         <h4 className="font-semibold text-blue-900 mb-3">Schedule Type: {doctor?.scheduleType}</h4>
                                     </div>
 
-                                    <div className="bg-gray-50 rounded-xl p-6">
+                                    <div className="bg-gray-50 rounded-lg p-6">
                                         <div className="flex items-start space-x-3">
                                             <svg className="w-6 h-6 text-gray-400 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path

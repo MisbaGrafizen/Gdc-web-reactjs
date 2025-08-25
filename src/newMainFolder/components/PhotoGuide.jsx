@@ -74,7 +74,7 @@ const PhotoGuide = () => {
               className="bg-white/60 backdrop-blur-sm rounded-2xl border border-white/20 shadow-lg p-6"
             >
               <div className="flex items-center space-x-3 mb-6">
-                <div className="w-10 h-10 bg-gradient-to-r from-teal-500 to-indigo-600 rounded-xl flex items-center justify-center">
+                <div className="w-10 h-10 bg-gradient-to-r from-blue-900 to-indigo-600 rounded-lg flex items-center justify-center">
                   <tip.icon className="w-5 h-5 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900">{tip.title}</h3>
@@ -129,10 +129,10 @@ const PhotoGuide = () => {
               <motion.div
                 key={index}
                 whileHover={{ scale: 1.05 }}
-                className="bg-gradient-to-br from-teal-50 to-indigo-50 rounded-xl p-4 border border-teal-100"
+                className="bg-gradient-to-br from-teal-50 to-indigo-50 rounded-lg p-4 border border-teal-100"
               >
                 <div className="text-center">
-                  <Camera className="w-8 h-8 text-teal-600 mx-auto mb-2" />
+                  <Camera className="w-8 h-8 text-blue-900 mx-auto mb-2" />
                   <h4 className="font-semibold text-gray-900 text-sm mb-1">{photo.name}</h4>
                   <p className="text-xs text-gray-600">{photo.description}</p>
                 </div>
@@ -140,7 +140,7 @@ const PhotoGuide = () => {
             ))}
           </div>
 
-          <div className="mt-8 bg-blue-50 rounded-xl p-4 border border-blue-200">
+          <div className="mt-8 bg-blue-50 rounded-lg p-4 border border-blue-200">
             <div className="flex items-start space-x-3">
               <Camera className="w-5 h-5 text-blue-600 mt-0.5" />
               <div className="text-sm text-blue-800">

@@ -3,7 +3,7 @@ import AboutUs from '../../component/aboutUS/AboutUs'
 import Header from '../../component/header/Header'
 import IntroDuction from '../../component/aboutUS/IntroDuction'
 import Madamintro from '../../component/aboutUS/Madamintro'
-
+import image from '../../../public/aboutus/image.webp'; 
 import Faq from '../../component/HOME/Faqs'
 import Blog from '../../component/HOME/Blog'
 import Testimonials from '../../component/HOME/Testimonials'
@@ -29,7 +29,7 @@ export default function AboutUsMainPage() {
               <div className="relative">
                 {/* Main doctor image */}
                 <div className="relative md:w-[90%] shadow-xl rounded-[20px]">
-                  <img src={aboutus1} alt="Smiling male doctor in white coat with stethoscope giving thumbs up" className="w-full h-auto rounded-[20px] rounded-b-[20px] object-cover" />
+                  <img src={image} alt="Smiling male doctor in white coat with stethoscope giving thumbs up" className="w-full h-auto rounded-[20px] rounded-b-[20px] object-cover" />
                 </div>
                 {/* Smaller doctor image - positioned as overlay */}
                 <div className="absolute -bottom-8 -left-8 w-48 h-48 rounded-[30px] overflow-hidden border-[10px] border-white shadow-lg">
@@ -44,23 +44,18 @@ export default function AboutUsMainPage() {
                 </p> */}
 
                 <div className="flex bg-[#cfd8eb] border-[#062f95] border-1 w-fit px-4 py-1 text-[#062f95] rounded-full text-sm font-medium mb-4">
-                  What We Are Doing For Our Business
+                 WELCOME TO GLOBAL DENTAL CARE
                 </div>
 
                 {/* Main heading */}
                 <h1 className="text-4xl md:text-[40px] font-[700] !leading-[50px] text-[#062f95] ">
-                  Medshop Create Unique High-quality
+                 We make smiles beautiful
                 </h1>
                 {/* Feature items */}
 
                 {/* Description text */}
                 <p className="text-gray-600 leading-relaxed">
-                  Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at neque. vivamus eget nibh cursleo vel
-                  metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in faucibusestibuloro nisl, porta
-                  scelerisque eget, malesuada
-                  Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at neque. vivamus eget nibh cursleo vel
-                  metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in faucibusestibuloro nisl, porta
-                  scelerisque eget, malesuada
+                 Experience the highest standards of dental healthcare with state-of-the-art technology, durable bio-friendly materials that focus on all preventive, painless, and cosmetic dental procedures in Rajkot at City Dental Hospital.At City Dental Hospital, the top Dental Hospital in Gujarat, we offer flexible timing, individual attention, affordability, accurate explanation of treatments, and excellent patient care. Here, we follow strict and stringent hygiene protocols.
                 </p>
 
                 <div className=" grid grid-cols-2 gap-6">
@@ -104,7 +99,7 @@ export default function AboutUsMainPage() {
 
         <div className=' flex flex-col gap-[50px]'>
 
-          <Introthird />
+          
           <Faq />
         </div>
 

@@ -11,11 +11,11 @@ export default function Introthird() {
           <div className="relative  rounded-2xl border">
             <div className="relative z-10 md:w-[400px] bg-white rounded-2xl overflow-hidden shadow-xl border-4 border-white">
               <div className="h-[390px] relative">
-                {/* <img
+                <img
                   src={doctor}
                   alt="Dr. Haard Vasavada"
                   className="h-full w-full object-contain"
-                /> */}
+                />
               </div>
             </div>
 
@@ -30,10 +30,10 @@ export default function Introthird() {
           </div>
 
           <div className="pt-5 text-center">
-            {/* <h3 className="text-2xl font-bold text-[#062f95]">Dr. Shrut Vasavada</h3>
+            <h3 className="text-2xl font-bold text-[#062f95]">Dr. Shrut Vasavada</h3>
             <p className="CDH-gradiant font-medium text-sm">
          MBBS, MS (Orthopaedics), FISS, FMISS
-            </p> */}
+            </p>
             <div className="mt-2 flex justify-center space-x-4">
               <span className="inline-flex items-center text-sm text-gray-600">
                 <MapPin className="w-4 h-4 mr-1" />
@@ -66,7 +66,7 @@ export default function Introthird() {
             patient-centered approach and dedication to improving neurological health.
           </p>
 
-          <div className="bg-gradient-to-br from-[#1b2644] to-blue-600 rounded-xl border shadow-md p-4 mb-8">
+          <div className="bg-gradient-to-br from-[#1b2644] to-blue-600 rounded-lg border shadow-md p-4 mb-8">
             <h3 className="font-bold  text-[#fff] text-lg mb-2">Professional Highlights:</h3>
             <ul className="space-y-2">
               <li className="flex items-start">

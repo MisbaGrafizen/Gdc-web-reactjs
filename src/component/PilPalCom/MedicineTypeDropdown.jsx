@@ -145,7 +145,7 @@ export default function MedicineTypeDropdown({ value, onChange }) {
         onClick={() => setIsOpen(!isOpen)}
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
-        className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl bg-gradient-to-r from-white to-gray-50 text-left focus:outline-none focus:border-blue-400 focus:shadow-lg transition-all duration-300 group"
+        className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg bg-gradient-to-r from-white to-gray-50 text-left focus:outline-none focus:border-blue-400 focus:shadow-lg transition-all duration-300 group"
       >
         <div className="flex items-center justify-between">
           <div className="flex items-center">
@@ -154,7 +154,7 @@ export default function MedicineTypeDropdown({ value, onChange }) {
                 <motion.div
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
-                  className="w-10 h-10 rounded-xl bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center mr-3 shadow-lg text-white"
+                  className="w-10 h-10 rounded-lg bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center mr-3 shadow-lg text-white"
                 >
                   {selectedType.icon}
                 </motion.div>
@@ -225,11 +225,11 @@ export default function MedicineTypeDropdown({ value, onChange }) {
                   whileHover={{ scale: 1.02, backgroundColor: "#F3F4F6" }}
                   whileTap={{ scale: 0.98 }}
                   onClick={() => handleSelect(type.id)}
-                  className="w-full p-4 text-left flex items-center hover:bg-gray-50 rounded-xl transition-all duration-200 group"
+                  className="w-full p-4 text-left flex items-center hover:bg-gray-50 rounded-lg transition-all duration-200 group"
                 >
                   <motion.div
                     whileHover={{ scale: 1.1, rotate: 5 }}
-                    className="w-12 h-12 rounded-xl bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center mr-4 shadow-lg group-hover:shadow-xl transition-shadow text-white"
+                    className="w-12 h-12 rounded-lg bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center mr-4 shadow-lg group-hover:shadow-xl transition-shadow text-white"
                   >
                     {type.icon}
                   </motion.div>

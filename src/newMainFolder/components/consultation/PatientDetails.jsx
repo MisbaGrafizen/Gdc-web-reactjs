@@ -94,9 +94,9 @@ const PatientDetails = ({ formData, updateFormData, errors, updateErrors, onNext
             name="fullName"
             value={formData.fullName}
             onChange={handleChange}
-            className={`w-full px-4 py-3 rounded-xl border ${
+            className={`w-full px-4 py-3 rounded-lg border ${
               localErrors.fullName ? "border-red-300" : "border-gray-300"
-            } focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all`}
+            } focus:ring-1 focus:ring-blue-900 focus:border-transparent transition-all`}
             placeholder="Enter your full name"
           />
           {localErrors.fullName && <p className="text-red-500 text-sm mt-1">{localErrors.fullName}</p>}
@@ -110,9 +110,9 @@ const PatientDetails = ({ formData, updateFormData, errors, updateErrors, onNext
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className={`w-full px-4 py-3 rounded-xl border ${
+            className={`w-full px-4 py-3 rounded-lg border ${
               localErrors.email ? "border-red-300" : "border-gray-300"
-            } focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all`}
+            } focus:ring-1 focus:ring-blue-900 focus:border-transparent transition-all`}
             placeholder="Enter your email"
           />
           {localErrors.email && <p className="text-red-500 text-sm mt-1">{localErrors.email}</p>}
@@ -126,7 +126,7 @@ const PatientDetails = ({ formData, updateFormData, errors, updateErrors, onNext
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all"
+            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-900 focus:border-transparent transition-all"
             placeholder="Enter your phone number"
           />
         </div>
@@ -138,9 +138,9 @@ const PatientDetails = ({ formData, updateFormData, errors, updateErrors, onNext
             name="country"
             value={formData.country}
             onChange={handleChange}
-            className={`w-full px-4 py-3 rounded-xl border ${
+            className={`w-full px-4 py-3 rounded-lg border ${
               localErrors.country ? "border-red-300" : "border-gray-300"
-            } focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all`}
+            } focus:ring-1 focus:ring-blue-900 focus:border-transparent transition-all`}
           >
             <option value="">Select your country</option>
             {countries.map((country) => (
@@ -160,9 +160,9 @@ const PatientDetails = ({ formData, updateFormData, errors, updateErrors, onNext
             name="city"
             value={formData.city}
             onChange={handleChange}
-            className={`w-full px-4 py-3 rounded-xl border ${
+            className={`w-full px-4 py-3 rounded-lg border ${
               localErrors.city ? "border-red-300" : "border-gray-300"
-            } focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all`}
+            } focus:ring-1 focus:ring-blue-900 focus:border-transparent transition-all`}
             placeholder="Enter your city"
           />
           {localErrors.city && <p className="text-red-500 text-sm mt-1">{localErrors.city}</p>}
@@ -175,9 +175,9 @@ const PatientDetails = ({ formData, updateFormData, errors, updateErrors, onNext
           whileTap={{ scale: 0.95 }}
           onClick={handleNext}
           disabled={!isFormValid}
-          className={`px-8 py-3 rounded-xl font-semibold transition-all ${
+          className={`px-8 py-3 rounded-lg font-semibold transition-all ${
             isFormValid
-              ? "bg-gradient-to-r from-teal-500 to-indigo-600 text-white shadow-lg hover:shadow-xl"
+              ? "bg-gradient-to-br from-[#1b2644] to-blue-600  text-white shadow-lg hover:shadow-xl"
               : "bg-gray-300 text-gray-500 cursor-not-allowed"
           }`}
         >

@@ -103,7 +103,7 @@ export default function SubscriptionPage() {
                     </div>
 
                     {/* CTA Button */}
-                    <button className="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white font-[600] py-3 px-6 rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform  shadow-lg">
+                    <button className="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white font-[600] py-3 px-6 rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform  shadow-lg">
                       Active now just at   :-  ₹ XXX
                     </button>
 
@@ -187,7 +187,7 @@ export default function SubscriptionPage() {
                     </div>
 
                     {/* CTA Button */}
-                    <button className="w-full bg-gradient-to-r from-yellow-600 to-yellow-700 text-white font-[600] py-3 px-6 rounded-xl hover:from-yellow-700 hover:to-yellow-800 transition-all duration-300 transform  shadow-lg">
+                    <button className="w-full bg-gradient-to-r from-yellow-600 to-yellow-700 text-white font-[600] py-3 px-6 rounded-lg hover:from-yellow-700 hover:to-yellow-800 transition-all duration-300 transform  shadow-lg">
                       Active now just at   :-  ₹ XXX
                     </button>
 

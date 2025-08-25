@@ -172,12 +172,12 @@
 //               {/* Additional Stats */}
 //               <div className="grid grid-cols-3 gap-6 mt-6">
 //                 {Object.entries(services[activeService].stats).map(([key, value], index) => (
-//                   <div key={index} className="text-center p-5 bg-white rounded-xl shadow-md border border-gray-200">
+//                   <div key={index} className="text-center p-5 bg-white rounded-lg shadow-md border border-gray-200">
 //                     <div className="text-3xl font-bold text-[#062f95] mb-2">{value}</div>
 //                     <div className="text-sm text-gray-600 capitalize">{key.replace(/([A-Z])/g, " $1").trim()}</div>
 //                   </div>
 //                 ))}
-//                 <div className="text-center p-5 bg-white rounded-xl shadow-md border border-gray-100">
+//                 <div className="text-center p-5 bg-white rounded-lg shadow-md border border-gray-100">
 //                   <div className="text-3xl font-bold text-[#062f95] mb-2">24/7</div>
 //                   <div className="text-sm text-gray-600">Support</div>
 //                 </div>
@@ -389,12 +389,12 @@ const services = [
             </div>
             <div className="grid grid-cols-3 gap-[10px] md:gap-6 pb-[2px] mt-5">
               {Object.entries(services[activeService].stats).map(([key, value], index) => (
-                <div key={index} className="text-center p-4 md:p-5 bg-white rounded-xl shadow-md border border-gray-100">
+                <div key={index} className="text-center p-4 md:p-5 bg-white rounded-lg shadow-md border border-gray-100">
                   <div className="tmd:text-3xl  text-[20px] font-bold text-[#062f95] mb-2">{value}</div>
                   <div className="t text-[12px] md:text-sm text-gray-600">{key.replace(/([A-Z])/g, " $1").trim()}</div>
                 </div>
               ))}
-              <div className="text-center p-4 md:p-5 bg-white rounded-xl shadow-md border border-gray-100">
+              <div className="text-center p-4 md:p-5 bg-white rounded-lg shadow-md border border-gray-100">
                 <div className="md:text-3xl  text-[20px] font-bold text-[#062f95] mb-2">24/7</div>
                 <div className=" text-[12px] md:text-sm text-gray-600">Support</div>
               </div>

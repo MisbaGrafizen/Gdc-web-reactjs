@@ -45,7 +45,7 @@ export default function SubcriptionDetailsPage({ cardType }) {
                                 {/* Action Buttons */}
                                 <div className="">
                                     <div className="grid grid-cols-3 gap-2 mb-">
-                                        <button className="flex   border-[1.2px] border-blue-300 flex-col items-center p-4 bg-blue-50 rounded-xl hover:bg-blue-100 transition-colors">
+                                        <button className="flex   border-[1.2px] border-blue-300 flex-col items-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
                                             <svg className="w-6 h-6 text-blue-600 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path
                                                     strokeLinecap="round"
@@ -56,7 +56,7 @@ export default function SubcriptionDetailsPage({ cardType }) {
                                             </svg>
                                             <span className="text-sm font-medium text-gray-700">Share</span>
                                         </button>
-                                        <button className="flex flex-col  border-[1.2px] border-green-300  items-center p-4 bg-green-50 rounded-xl hover:bg-green-100 transition-colors">
+                                        <button className="flex flex-col  border-[1.2px] border-green-300  items-center p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors">
                                             <svg className="w-6 h-6 text-green-600 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path
                                                     strokeLinecap="round"
@@ -67,7 +67,7 @@ export default function SubcriptionDetailsPage({ cardType }) {
                                             </svg>
                                             <span className="text-sm font-medium text-gray-700">Download</span>
                                         </button>
-                                        <button className="flex flex-col  border-[1.2px] border-purple-200 items-center p-4 bg-purple-50 rounded-xl hover:bg-purple-100 transition-colors">
+                                        <button className="flex flex-col  border-[1.2px] border-purple-200 items-center p-4 bg-purple-50 rounded-lg hover:bg-purple-100 transition-colors">
                                             <svg className="w-6 h-6 text-purple-600 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path
                                                     strokeLinecap="round"
@@ -92,7 +92,7 @@ export default function SubcriptionDetailsPage({ cardType }) {
                                     <span className="text-blue-600 font-medium">This Year</span>
                                 </div>
 
-                                <div className="bg-gray-50 rounded-xl p-6 mb-2">
+                                <div className="bg-gray-50 rounded-lg p-6 mb-2">
                                     <div className="flex items-center mb-4">
                                         <div className="w-12 h-12 bg-blue-600 rounded-md flex items-center justify-center mr-4">
                                     <i className="fa-solid  text-[#fff] fa-credit-card"></i>
@@ -146,7 +146,7 @@ export default function SubcriptionDetailsPage({ cardType }) {
                                 </div>
 
                                 <div className="space-y-4">
-                                    <div className="flex items-center justify-between p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors cursor-pointer">
+                                    <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer">
                                         <div className="flex items-center">
                                             <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
                                                 <img
@@ -175,7 +175,7 @@ export default function SubcriptionDetailsPage({ cardType }) {
                                 </div>
 
                                 <div className="space-y-4">
-                                    <div className="flex items-center justify-between p-4  border-l-4 border-red-400 bg-red-50 rounded-xl">
+                                    <div className="flex items-center justify-between p-4  border-l-4 border-red-400 bg-red-50 rounded-lg">
                                         <div className="flex items-center">
                                             <div className="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center mr-4">
                                                 <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -197,7 +197,7 @@ export default function SubcriptionDetailsPage({ cardType }) {
                                         </div>
                                     </div>
 
-                                    <div className="flex items-center  justify-between p-4 border-l-4 border-green-400 bg-green-50 rounded-xl">
+                                    <div className="flex items-center  justify-between p-4 border-l-4 border-green-400 bg-green-50 rounded-lg">
                                         <div className="flex items-center">
                                             <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-4">
                                                <i className="fa-solid text-[#fff] fa-user"></i>
@@ -213,7 +213,7 @@ export default function SubcriptionDetailsPage({ cardType }) {
                                         </div>
                                     </div>
 
-                                    <div className="flex items-center justify-between p-4 border-l-4 border-purple-400 bg-purple-50 rounded-xl">
+                                    <div className="flex items-center justify-between p-4 border-l-4 border-purple-400 bg-purple-50 rounded-lg">
                                         <div className="flex items-center">
                                             <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mr-4">
                                          <i className="fa-regular text-[#fff] fa-vial-virus"></i>

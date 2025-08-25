@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import about1 from '../../.././public/whyChooseUs.webp'
-
+import image from '../../../public/aboutus/image.webp'; 
 import { Link } from "react-router-dom";
 import { Calculator, TrendingUp, Shield, Award, Users, BarChart3, PieChart } from "lucide-react"
 
@@ -82,7 +82,7 @@ export default function AboutUs() {
                   </div>
 
                   {/* Floating Card */}
-                  {/* <div className="absolute -bottom-8 -left-8 border bg-white p-6 rounded-xl shadow-xl  border-gray-100">
+                  {/* <div className="absolute -bottom-8 -left-8 border bg-white p-6 rounded-lg shadow-xl  border-gray-100">
                     <div className="flex items-center space-x-4">
                       <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center">
                         <span className="text-slate-600 font-bold">CA</span>

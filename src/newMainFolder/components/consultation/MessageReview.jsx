@@ -56,7 +56,7 @@ const MessageReview = ({ formData, updateFormData, errors, updateErrors, onPrev,
           value={formData.messageToDoctor}
           onChange={(e) => updateFormData({ messageToDoctor: e.target.value })}
           rows={4}
-          className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all"
+          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-900 focus:border-transparent transition-all"
           placeholder="Any specific questions or concerns you'd like to discuss..."
         />
       </div>
@@ -72,7 +72,7 @@ const MessageReview = ({ formData, updateFormData, errors, updateErrors, onPrev,
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <User className="w-5 h-5 text-teal-600" />
+              <User className="w-5 h-5 text-blue-900" />
               <div>
                 <p className="font-medium text-gray-900">{formData.fullName}</p>
                 <p className="text-sm text-gray-600">{formData.email}</p>
@@ -80,7 +80,7 @@ const MessageReview = ({ formData, updateFormData, errors, updateErrors, onPrev,
             </div>
 
             <div className="flex items-center space-x-3">
-              <MapPin className="w-5 h-5 text-teal-600" />
+              <MapPin className="w-5 h-5 text-blue-900" />
               <div>
                 <p className="font-medium text-gray-900">
                   {formData.city}, {formData.country}
@@ -90,7 +90,7 @@ const MessageReview = ({ formData, updateFormData, errors, updateErrors, onPrev,
             </div>
 
             <div className="flex items-center space-x-3">
-              <Stethoscope className="w-5 h-5 text-teal-600" />
+              <Stethoscope className="w-5 h-5 text-blue-900" />
               <div>
                 <p className="font-medium text-gray-900">{formData.treatment}</p>
                 {formData.treatment === "Others" && formData.chiefComplaint && (
@@ -102,7 +102,7 @@ const MessageReview = ({ formData, updateFormData, errors, updateErrors, onPrev,
 
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <FileText className="w-5 h-5 text-teal-600" />
+              <FileText className="w-5 h-5 text-blue-900" />
               <div>
                 <p className="font-medium text-gray-900">Files Uploaded</p>
                 <p className="text-sm text-gray-600">{fileCount} files</p>
@@ -110,7 +110,7 @@ const MessageReview = ({ formData, updateFormData, errors, updateErrors, onPrev,
             </div>
 
             <div className="flex items-center space-x-3">
-              <ImageIcon className="w-5 h-5 text-teal-600" />
+              <ImageIcon className="w-5 h-5 text-blue-900" />
               <div>
                 <p className="font-medium text-gray-900">Photos Uploaded</p>
                 <p className="text-sm text-gray-600">{photoCount} photos</p>
@@ -127,7 +127,7 @@ const MessageReview = ({ formData, updateFormData, errors, updateErrors, onPrev,
         <div className="space-y-4">
           <motion.div
             whileHover={{ scale: 1.01 }}
-            className={`p-4 rounded-xl border-2 transition-all ${
+            className={`p-4 rounded-lg border-2 transition-all ${
               formData.consents.accurateDetails
                 ? "border-teal-200 bg-teal-50"
                 : localErrors.accurateDetails
@@ -140,7 +140,7 @@ const MessageReview = ({ formData, updateFormData, errors, updateErrors, onPrev,
                 type="checkbox"
                 checked={formData.consents.accurateDetails}
                 onChange={(e) => handleConsentChange("accurateDetails", e.target.checked)}
-                className="mt-1 text-teal-500 focus:ring-teal-500 rounded"
+                className="mt-1 text-blue-900 focus:ring-blue-900 rounded"
               />
               <div>
                 <p className="font-medium text-gray-900">I confirm that all details provided are accurate</p>
@@ -152,7 +152,7 @@ const MessageReview = ({ formData, updateFormData, errors, updateErrors, onPrev,
 
           <motion.div
             whileHover={{ scale: 1.01 }}
-            className={`p-4 rounded-xl border-2 transition-all ${
+            className={`p-4 rounded-lg border-2 transition-all ${
               formData.consents.dataProcessing
                 ? "border-teal-200 bg-teal-50"
                 : localErrors.dataProcessing
@@ -165,7 +165,7 @@ const MessageReview = ({ formData, updateFormData, errors, updateErrors, onPrev,
                 type="checkbox"
                 checked={formData.consents.dataProcessing}
                 onChange={(e) => handleConsentChange("dataProcessing", e.target.checked)}
-                className="mt-1 text-teal-500 focus:ring-teal-500 rounded"
+                className="mt-1 text-blue-900 focus:ring-blue-900 rounded"
               />
               <div>
                 <p className="font-medium text-gray-900">
@@ -187,7 +187,7 @@ const MessageReview = ({ formData, updateFormData, errors, updateErrors, onPrev,
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={onPrev}
-          className="px-8 py-3 rounded-xl border border-gray-300 text-gray-700 font-semibold hover:bg-gray-50 transition-all"
+          className="px-8 py-3 rounded-lg border border-gray-300 text-gray-700 font-semibold hover:bg-gray-50 transition-all"
         >
           Previous
         </motion.button>
@@ -196,9 +196,9 @@ const MessageReview = ({ formData, updateFormData, errors, updateErrors, onPrev,
           whileTap={{ scale: 0.95 }}
           onClick={handleContinue}
           disabled={!isFormValid}
-          className={`px-8 py-3 rounded-xl font-semibold transition-all ${
+          className={`px-8 py-3 rounded-lg font-semibold transition-all ${
             isFormValid
-              ? "bg-gradient-to-r from-teal-500 to-indigo-600 text-white shadow-lg hover:shadow-xl"
+              ? "bg-gradient-to-br from-[#1b2644] to-blue-600  text-white shadow-lg hover:shadow-xl"
               : "bg-gray-300 text-gray-500 cursor-not-allowed"
           }`}
         >

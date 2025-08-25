@@ -366,7 +366,7 @@ export default function AppointmentBookingModalRefined({ isOpen, onClose }) {
 
     return (
         <div className="fixed inset-0 z-[2000] flex items-center font-Poppins justify-center bg-black bg-opacity-60 p-4">
-            <div className="relative h-[90vh] w-full max-w-3xl overflow-hidden rounded-xl bg-white shadow-2xl">
+            <div className="relative h-[90vh] w-full max-w-3xl overflow-hidden rounded-lg bg-white shadow-2xl">
                 {/* Modal Header */}
                 <div className="flex items-center justify-between bg-gradient-to-br from-[#1b2644] to-blue-600 p-2 text-white shadow-md">
                     {step > 1 && (

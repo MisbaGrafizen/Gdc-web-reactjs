@@ -135,7 +135,7 @@ export default function ContactUs() {
                   <div className="flex md:items-center mb-8">
                     <div
 
-                      className="w-12 h-12 bg-gradient-to-br flex-shrink-0 from-[#1b2644] to-blue-600 rounded-xl flex items-center justify-center mr-4"
+                      className="w-12 h-12 bg-gradient-to-br flex-shrink-0 from-[#1b2644] to-blue-600 rounded-lg flex items-center justify-center mr-4"
                     >
                       <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path
@@ -240,7 +240,7 @@ export default function ContactUs() {
                     <button
                       type="submit"
 
-                      className="w-full bg-gradient-to-br from-[#1b2644] to-blue-600 py-4 px-6 text-white font-semibold rounded-xl hover:opacity-90 transition-opacity shadow-lg"
+                      className="w-full bg-gradient-to-br from-[#1b2644] to-blue-600 py-4 px-6 text-white font-semibold rounded-lg hover:opacity-90 transition-opacity shadow-lg"
                     >
                       Submit Medical Inquiry
                     </button>
@@ -251,13 +251,13 @@ export default function ContactUs() {
               {/* Contact Information - Medical Focus */}
               <div className="space-y-6 flex justify-between  flex-col h-[100%] font-Poppins">
                 {/* Quick Contact */}
-                <div className="bg-white rounded-xl shadow-xl p-6 border border-gray-100">
+                <div className="bg-white rounded-lg shadow-xl p-6 border border-gray-100">
                   <h3 className="text-xl font-bold text-gray-900 mb-6">Quick Contact</h3>
                   <div className="space-y-4">
-                    <div className="flex items-center space-x-4 p-4 bg-blue-50 rounded-xl">
+                    <div className="flex items-center space-x-4 p-4 bg-blue-50 rounded-lg">
                       <div
 
-                        className="w-12 bg-gradient-to-br from-[#1b2644] to-blue-600 h-12 rounded-xl flex items-center justify-center"
+                        className="w-12 bg-gradient-to-br from-[#1b2644] to-blue-600 h-12 rounded-lg flex items-center justify-center"
                       >
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path
@@ -276,10 +276,10 @@ export default function ContactUs() {
                       </div>
                     </div>
 
-                    <div className="flex items-center space-x-4 p-4 bg-blue-50 rounded-xl">
+                    <div className="flex items-center space-x-4 p-4 bg-blue-50 rounded-lg">
                       <div
 
-                        className="w-12 h-12 bg-gradient-to-br from-[#1b2644] to-blue-600 rounded-xl flex items-center justify-center"
+                        className="w-12 h-12 bg-gradient-to-br from-[#1b2644] to-blue-600 rounded-lg flex items-center justify-center"
                       >
                         <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path
@@ -301,7 +301,7 @@ export default function ContactUs() {
                 </div>
 
                 {/* Office Location */}
-                <div className="bg-white rounded-xl shadow-xl p-6 border border-gray-100">
+                <div className="bg-white rounded-lg shadow-xl p-6 border border-gray-100">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Medical Center Location</h3>
                   <div className="space-y-4">
                     <div className="flex items-start space-x-3">
@@ -335,7 +335,7 @@ export default function ContactUs() {
                         </p>
                       </div>
                     </div>
-                    <div className="bg-gray-50 rounded-xl p-4">
+                    <div className="bg-gray-50 rounded-lg p-4">
                       <p className="text-sm font-semibold text-gray-700 mb-2">Operating Hours</p>
                       <div className="space-y-1 text-sm text-gray-600">
                         <div className="flex justify-between">
@@ -371,7 +371,7 @@ export default function ContactUs() {
                 <p className="text-blue-100 mb-4">
                   For urgent medical situations, call our emergency line immediately.
                 </p>
-                <button className="w-full bg-white text-blue-900 font-bold py-3 rounded-xl hover:bg-gray-100 transition-colors">
+                <button className="w-full bg-white text-blue-900 font-bold py-3 rounded-lg hover:bg-gray-100 transition-colors">
                   Emergency: +91 8849642442
                 </button>
               </div> */}
@@ -380,7 +380,7 @@ export default function ContactUs() {
 
             {/* Trust Indicators */}
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-              <div className="bg-white rounded-xl p-6 text-center shadow-lg border border-gray-100">
+              <div className="bg-white rounded-lg p-6 text-center shadow-lg border border-gray-100">
                 <div
                   style={{ backgroundColor: "#062f95" }}
                   className="w-16 h-16 rounded-full  flex items-center justify-center mx-auto mb-4"

@@ -207,7 +207,7 @@ const CustomDropdown = ({ label, value, options, field, icon, placeholder }) => 
             <motion.button
               type="button"
               onClick={() => toggleDropdown(dropdownId)}
-              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-left flex items-center justify-between"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-left flex items-center justify-between"
               whileTap={{ scale: 0.98 }}
             >
               <div className="flex items-center">
@@ -233,7 +233,7 @@ const CustomDropdown = ({ label, value, options, field, icon, placeholder }) => 
                   initial="hidden"
                   animate="visible"
                   exit="exit"
-                  className="absolute z-50 w-full mt-2 bg-white border border-gray-200 rounded-xl shadow-lg max-h-60 overflow-y-auto"
+                  className="absolute z-50 w-full mt-2 bg-white border border-gray-200 rounded-lg shadow-lg max-h-60 overflow-y-auto"
                 >
                   {options.map((option, index) => (
                     <motion.button
@@ -272,7 +272,7 @@ const CustomDropdown = ({ label, value, options, field, icon, placeholder }) => 
           </div>
         ) : (
           <motion.div
-            className="flex items-center px-4 py-3 bg-gray-50 rounded-xl"
+            className="flex items-center px-4 py-3 bg-gray-50 rounded-lg"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.3 }}
@@ -307,7 +307,7 @@ const CustomDropdown = ({ label, value, options, field, icon, placeholder }) => 
                   type="text"
                   value={editData.fullName}
                   onChange={(e) => handleInputChange("fullName", e.target.value)}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   placeholder="Enter your full name"
                 />
               ) : (
@@ -317,7 +317,7 @@ const CustomDropdown = ({ label, value, options, field, icon, placeholder }) => 
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.2 }}
-                  className="flex items-center px-4 py-3 bg-gray-50 rounded-xl"
+                  className="flex items-center px-4 py-3 bg-gray-50 rounded-lg"
                 >
                   <svg className="w-5 h-5 text-blue-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path
@@ -346,7 +346,7 @@ const CustomDropdown = ({ label, value, options, field, icon, placeholder }) => 
                   type="email"
                   value={editData.email}
                   onChange={(e) => handleInputChange("email", e.target.value)}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   placeholder="Enter your email"
                 />
               ) : (
@@ -356,7 +356,7 @@ const CustomDropdown = ({ label, value, options, field, icon, placeholder }) => 
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.2 }}
-                  className="flex items-center px-4 py-3 bg-gray-50 rounded-xl"
+                  className="flex items-center px-4 py-3 bg-gray-50 rounded-lg"
                 >
                   <svg className="w-5 h-5 text-blue-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path
@@ -403,7 +403,7 @@ const CustomDropdown = ({ label, value, options, field, icon, placeholder }) => 
                   type="date"
                   value={editData.dateOfBirth}
                   onChange={(e) => handleInputChange("dateOfBirth", e.target.value)}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 />
               ) : (
                 <motion.div
@@ -412,7 +412,7 @@ const CustomDropdown = ({ label, value, options, field, icon, placeholder }) => 
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.2 }}
-                  className="flex items-center px-4 py-3 bg-gray-50 rounded-xl"
+                  className="flex items-center px-4 py-3 bg-gray-50 rounded-lg"
                 >
                   <svg className="w-5 h-5 text-blue-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path
@@ -523,7 +523,7 @@ const CustomDropdown = ({ label, value, options, field, icon, placeholder }) => 
                   type="number"
                   value={editData.height}
                   onChange={(e) => handleInputChange("height", e.target.value)}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   placeholder="Height"
                 />
               ) : (
@@ -533,7 +533,7 @@ const CustomDropdown = ({ label, value, options, field, icon, placeholder }) => 
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.2 }}
-                  className="flex items-center px-4 py-3 bg-gray-50 rounded-xl"
+                  className="flex items-center px-4 py-3 bg-gray-50 rounded-lg"
                 >
                   <svg className="w-5 h-5 text-blue-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path
@@ -562,7 +562,7 @@ const CustomDropdown = ({ label, value, options, field, icon, placeholder }) => 
                   type="number"
                   value={editData.weight}
                   onChange={(e) => handleInputChange("weight", e.target.value)}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   placeholder="Weight"
                 />
               ) : (
@@ -572,7 +572,7 @@ const CustomDropdown = ({ label, value, options, field, icon, placeholder }) => 
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.2 }}
-                  className="flex items-center px-4 py-3 bg-gray-50 rounded-xl"
+                  className="flex items-center px-4 py-3 bg-gray-50 rounded-lg"
                 >
                   <svg className="w-5 h-5 text-blue-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path
@@ -705,7 +705,7 @@ const CustomDropdown = ({ label, value, options, field, icon, placeholder }) => 
                   type="tel"
                   value={editData.mobileNumber}
                   onChange={(e) => handleInputChange("mobileNumber", e.target.value)}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   placeholder="Enter mobile number"
                 />
               ) : (
@@ -715,7 +715,7 @@ const CustomDropdown = ({ label, value, options, field, icon, placeholder }) => 
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.2 }}
-                  className="flex items-center px-4 py-3 bg-gray-50 rounded-xl"
+                  className="flex items-center px-4 py-3 bg-gray-50 rounded-lg"
                 >
                   <svg className="w-5 h-5 text-blue-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path
@@ -744,7 +744,7 @@ const CustomDropdown = ({ label, value, options, field, icon, placeholder }) => 
                   type="tel"
                   value={editData.alternativeNumber}
                   onChange={(e) => handleInputChange("alternativeNumber", e.target.value)}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   placeholder="Enter alternative number"
                 />
               ) : (
@@ -754,7 +754,7 @@ const CustomDropdown = ({ label, value, options, field, icon, placeholder }) => 
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.2 }}
-                  className="flex items-center px-4 py-3 bg-gray-50 rounded-xl"
+                  className="flex items-center px-4 py-3 bg-gray-50 rounded-lg"
                 >
                   <svg className="w-5 h-5 text-blue-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path

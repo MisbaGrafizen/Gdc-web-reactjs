@@ -152,7 +152,7 @@ export default function LandingLogin() {
                     onChange={handleInputChange}
                     placeholder="Enter your full name"
                     className={`w-full px-6 py-[9px] md:py-3 bg-white/10 backdrop-blur-sm border ${errors.name ? "border-red-400" : "border-white/30"
-                      } rounded-xl text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-300`}
+                      } rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-300`}
                   />
                   {errors.name && <p className="text-red-400 text-sm ml-2">{errors.name}</p>}
                 </div>
@@ -177,14 +177,14 @@ export default function LandingLogin() {
   placeholder="Enter your mobile number"
   maxLength={10}
   className={`w-full px-6 py-[9px] md:py-3 bg-white/10 backdrop-blur-sm border ${errors.number ? "border-red-400" : "border-white/30"
-    } rounded-xl text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-300`}
+    } rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-300`}
 />
 {errors.number && <p className="text-red-400 text-sm ml-2">{errors.number}</p>}
 
                 </div>
                 <button
                   type="submit"
-                  className="w-[100%] bg-gradient-to-r  !mb-[10px] !mt-[20px] md:mt-[40px]  mx-auto from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white mt-[40px] font-bold py-3 px-8 rounded-xl transition-all duration-300 transform  hover:shadow-2xl focus:outline-none focus:ring-blue-400/50"
+                  className="w-[100%] bg-gradient-to-r  !mb-[10px] !mt-[20px] md:mt-[40px]  mx-auto from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white mt-[40px] font-bold py-3 px-8 rounded-lg transition-all duration-300 transform  hover:shadow-2xl focus:outline-none focus:ring-blue-400/50"
                 >
                   Get Started Now
                 </button>
@@ -265,7 +265,7 @@ export default function LandingLogin() {
                 ].map((benefit, index) => (
                   <div
                     key={index}
-                    className="backdrop-blur-xl bg-white/10 h-[130px] rounded-xl p-4 border border-white/20 hover:bg-white/20 transition-all duration-300 group"
+                    className="backdrop-blur-xl bg-white/10 h-[130px] rounded-lg p-4 border border-white/20 hover:bg-white/20 transition-all duration-300 group"
                   >
                     <div className="flex flex-col items-start gap-[10px]">
 

@@ -15,7 +15,7 @@ const Footer = () => {
               viewport={{ once: true }}
               className="flex items-center space-x-2 mb-4"
             >
-              <div className="w-8 h-8 bg-gradient-to-r from-teal-500 to-indigo-600 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-gradient-to-r from-blue-900 to-indigo-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">GD</span>
               </div>
               <span className="font-semibold text-xl">Global Dental</span>

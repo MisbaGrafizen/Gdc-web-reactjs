@@ -88,10 +88,10 @@ const FAQ = () => {
               <motion.button
                 whileHover={{ backgroundColor: "rgba(255, 255, 255, 0.8)" }}
                 onClick={() => toggleFAQ(index)}
-                className="w-full px-6 py-4 text-left flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-inset"
+                className="w-full px-6 py-4 text-left flex items-center justify-between "
               >
                 <div className="flex items-center space-x-3">
-                  <div className="w-8 h-8 bg-gradient-to-r from-teal-500 to-indigo-600 rounded-lg flex items-center justify-center">
+                  <div className="w-8 h-8 bg-gradient-to-r from-blue-900 to-indigo-600 rounded-lg flex items-center justify-center">
                     <faq.icon className="w-4 h-4 text-white" />
                   </div>
                   <span className="font-semibold text-gray-900">{faq.question}</span>
@@ -136,7 +136,7 @@ const FAQ = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-teal-500 to-indigo-600 text-white rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all"
+              className="inline-flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-blue-900 to-indigo-600 text-white rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all"
             >
               <MessageCircle className="w-5 h-5" />
               <span>Contact Support</span>

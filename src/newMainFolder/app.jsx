@@ -2,16 +2,17 @@
 
 import { useState, useEffect } from "react"
 import { AnimatePresence } from "framer-motion"
-import Header from "./components/Header"
+
 import Hero from "./components/Hero"
 import StickyTabs from "./components/StickyTabs"
 import OnlineConsultation from "./components/OnlineConsultation"
 import Pricing from "./components/Pricing"
 import PhotoGuide from "./components/PhotoGuide"
 import FAQ from "./components/FAQ"
-import Footer from "./components/Footer"
+import Footer from "../component/footer/Footer"
 import PaymentModal from "./components/PaymentModal"
 import SuccessModal from "./components/SuccessModal"
+import Header from "../component/header/Header"
 
 function App() {
   const [activeTab, setActiveTab] = useState("consultation")

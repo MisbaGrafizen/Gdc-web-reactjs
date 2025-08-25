@@ -51,7 +51,7 @@ const PaymentModal = ({ plan, onClose, onSuccess }) => {
         </div>
 
         {/* Plan Summary */}
-        <div className="bg-gradient-to-r from-teal-50 to-indigo-50 rounded-xl p-4 mb-6 border border-teal-100">
+        <div className="bg-gradient-to-r from-teal-50 to-indigo-50 rounded-lg p-4 mb-6 border border-teal-100">
           <div className="flex items-center justify-between">
             <div>
               <h4 className="font-semibold text-gray-900">{plan?.name} Plan</h4>
@@ -87,7 +87,7 @@ const PaymentModal = ({ plan, onClose, onSuccess }) => {
               <input
                 type="text"
                 placeholder="1234 5678 9012 3456"
-                className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-teal-500 focus:border-transparent pl-12"
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-900 focus:border-transparent pl-12"
               />
               <CreditCard className="w-5 h-5 text-gray-400 absolute left-4 top-1/2 transform -translate-y-1/2" />
             </div>
@@ -99,7 +99,7 @@ const PaymentModal = ({ plan, onClose, onSuccess }) => {
               <input
                 type="text"
                 placeholder="MM/YY"
-                className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-900 focus:border-transparent"
               />
             </div>
             <div>
@@ -107,7 +107,7 @@ const PaymentModal = ({ plan, onClose, onSuccess }) => {
               <input
                 type="text"
                 placeholder="123"
-                className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-900 focus:border-transparent"
               />
             </div>
           </div>
@@ -117,13 +117,13 @@ const PaymentModal = ({ plan, onClose, onSuccess }) => {
             <input
               type="text"
               placeholder="John Doe"
-              className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-900 focus:border-transparent"
             />
           </div>
         </div>
 
         {/* Security Notice */}
-        <div className="bg-green-50 rounded-xl p-3 mb-6 border border-green-200">
+        <div className="bg-green-50 rounded-lg p-3 mb-6 border border-green-200">
           <div className="flex items-center space-x-2">
             <Lock className="w-4 h-4 text-green-600" />
             <span className="text-sm text-green-800">Your payment is secured with 256-bit SSL encryption</span>
@@ -136,10 +136,10 @@ const PaymentModal = ({ plan, onClose, onSuccess }) => {
           whileTap={{ scale: processing ? 1 : 0.98 }}
           onClick={handlePayment}
           disabled={processing}
-          className={`w-full py-4 rounded-xl font-semibold text-white shadow-lg transition-all ${
+          className={`w-full py-4 rounded-lg font-semibold text-white shadow-lg transition-all ${
             processing
               ? "bg-gray-400 cursor-not-allowed"
-              : "bg-gradient-to-r from-teal-500 to-indigo-600 hover:shadow-xl"
+              : "bg-gradient-to-r from-blue-900 to-indigo-600 hover:shadow-xl"
           }`}
         >
           {processing ? (

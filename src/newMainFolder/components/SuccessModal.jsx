@@ -113,7 +113,7 @@ const SuccessModal = ({ onClose }) => {
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.5 }}
-          className="bg-gray-50 rounded-xl p-4 mb-6"
+          className="bg-gray-50 rounded-lg p-4 mb-6"
         >
           <p className="text-sm text-gray-600 mb-1">Reference ID</p>
           <p className="font-mono font-semibold text-gray-900">{referenceId}</p>
@@ -129,15 +129,15 @@ const SuccessModal = ({ onClose }) => {
           <h4 className="font-semibold text-gray-900 mb-3">What happens next?</h4>
           <div className="space-y-2">
             <div className="flex items-center space-x-3">
-              <Phone className="w-4 h-4 text-teal-600" />
+              <Phone className="w-4 h-4 text-blue-900" />
               <span className="text-sm text-gray-600">Our coordinator will call you within 24 hours</span>
             </div>
             <div className="flex items-center space-x-3">
-              <Calendar className="w-4 h-4 text-teal-600" />
+              <Calendar className="w-4 h-4 text-blue-900" />
               <span className="text-sm text-gray-600">Schedule your consultation at a convenient time</span>
             </div>
             <div className="flex items-center space-x-3">
-              <Mail className="w-4 h-4 text-teal-600" />
+              <Mail className="w-4 h-4 text-blue-900" />
               <span className="text-sm text-gray-600">Receive consultation summary via email</span>
             </div>
           </div>
@@ -152,13 +152,13 @@ const SuccessModal = ({ onClose }) => {
         >
           <button
             onClick={onClose}
-            className="flex-1 px-4 py-3 border border-gray-300 text-gray-700 rounded-xl font-semibold hover:bg-gray-50 transition-colors"
+            className="flex-1 px-4 py-3 border border-gray-300 text-gray-700 rounded-lg font-semibold hover:bg-gray-50 transition-colors"
           >
             Back to Home
           </button>
           <button
             onClick={onClose}
-            className="flex-1 px-4 py-3 bg-gradient-to-r from-teal-500 to-indigo-600 text-white rounded-xl font-semibold hover:shadow-lg transition-all"
+            className="flex-1 px-4 py-3 bg-gradient-to-r from-blue-900 to-indigo-600 text-white rounded-lg font-semibold hover:shadow-lg transition-all"
           >
             View Summary
           </button>

@@ -182,7 +182,7 @@ export default function Faq() {
             icon: <Heart className="w-4 h-4" />,
             question: "What types of Dental care services does Gdc provide?",
             answer:
-                "Gdc offers comprehensive Dental care services including general physician consultations, specialist consultations, pharmacy services, lab tests, home care services, and nutritionist consultations. Our health cards provide access to a wide network of Dental care providers.",
+                "Gdc offers comprehensive Dental care services including general physician consultations, specialist consultations, pharmacy services, lab tests, home care services, and nutritionist consultations. Our Dental Cares provide access to a wide network of Dental care providers.",
             category: "Services",
             color: "from-[#062f95] to-blue-600",
         },
@@ -209,16 +209,16 @@ export default function Faq() {
             icon: <Shield className="w-4 h-4" />,
             question: "Do you offer emergency Dental care services?",
             answer:
-                "Yes, Gdc provides 24/7 emergency Dental care services through our network of partner hospitals. Emergency services are covered under our Comprehensive Health Card plan, and we also offer telemedicine consultations for urgent but non-critical situations.",
+                "Yes, Gdc provides 24/7 emergency Dental care services through our network of partner hospitals. Emergency services are covered under our Comprehensive Dental Care plan, and we also offer telemedicine consultations for urgent but non-critical situations.",
             category: "Emergency",
             color: "from-[#062f95] to-blue-600",
         },
         {
             id: 5,
             icon: <Heart className="w-4 h-4" />,
-            question: "How do I apply for a Gdc health card?",
+            question: "How do I apply for a Gdc Dental Care?",
             answer:
-                "You can apply for a Gdc health card through our website, mobile app, or by visiting any of our clinics. The application process is simple and takes just a few minutes. Choose between our Essential (₹600/year) or Comprehensive (₹1200/year) plans based on your needs.",
+                "You can apply for a Gdc Dental Care through our website, mobile app, or by visiting any of our clinics. The application process is simple and takes just a few minutes. Choose between our Essential (₹600/year) or Comprehensive (₹1200/year) plans based on your needs.",
             category: "Application",
             color: "from-[#062f95] to-blue-600",
         },
@@ -227,7 +227,7 @@ export default function Faq() {
             icon: <Shield className="w-4 h-4" />,
             question: "What makes Gdc different from other Dental care providers?",
             answer:
-                "Gdc combines traditional Dental care with modern technology, offering integrated digital health cards, transparent pricing, and a patient-first approach. Our 25+ years of experience, extensive network, and commitment to making Dental care accessible sets us apart.",
+                "Gdc combines traditional Dental care with modern technology, offering integrated digital Dental Cares, transparent pricing, and a patient-first approach. Our 25+ years of experience, extensive network, and commitment to making Dental care accessible sets us apart.",
             category: "About",
             color: "from-[#062f95] to-blue-600",
         },
@@ -265,7 +265,7 @@ export default function Faq() {
                             {faqData.map((faq, index) => (
                                 <div
                                     key={faq.id}
-                                    className={`group relative  h-fit overflow-hidden rounded-xl border  border-[#062e957b] transition-all duration-500 hover:shadow-xl ${openFaq === faq.id
+                                    className={`group relative  h-fit overflow-hidden rounded-lg border  border-[#062e957b] transition-all duration-500 hover:shadow-xl ${openFaq === faq.id
                                         ? "bg-white shadow-2xl  scale-[1.02]"
                                         : "bg-white/80 backdrop-blur-sm hover:border-gray-300"
                                         }`}
@@ -281,7 +281,7 @@ export default function Faq() {
                                         {/* Question Header */}
                                         <button
                                             onClick={() => toggleFaq(faq.id)}
-                                            className="w-full text-left focus:outline-none  focus:ring-offset-2 rounded-xl"
+                                            className="w-full text-left focus:outline-none  focus:ring-offset-2 rounded-lg"
                                         >
                                             <div className="flex items-center justify-between gap-4 ">
                                                 <div className=" flex gap-[15px] items-center">
@@ -322,7 +322,7 @@ export default function Faq() {
 
                                     {/* Hover Effect Border */}
                                     <div
-                                        className={`absolute inset-0 rounded-xl  border-transparent bg-[#062e9546] opacity-0 group-hover:opacity-20 transition-opacity duration-300 pointer-events-none`}
+                                        className={`absolute inset-0 rounded-lg  border-transparent bg-[#062e9546] opacity-0 group-hover:opacity-20 transition-opacity duration-300 pointer-events-none`}
                                     ></div>
                                 </div>
                             ))}

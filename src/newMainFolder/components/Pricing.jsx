@@ -16,7 +16,7 @@ const Pricing = ({ onPlanSelect, consultationData }) => {
         "Discussion of treatment options",
       ],
       icon: Phone,
-      color: "from-teal-500 to-teal-600",
+      color: "from-blue-900 to-blue-900",
       popular: false,
     },
     {
@@ -31,7 +31,7 @@ const Pricing = ({ onPlanSelect, consultationData }) => {
         "Ideal for complex cases (All-on-4/6, full-mouth rehab, cosmetic makeovers, veneers, aligners) & NRIs",
       ],
       icon: Video,
-      color: "from-indigo-500 to-purple-600",
+      color: "from-[#1b2644] to-blue-600 ",
       popular: true,
     },
   ]
@@ -68,7 +68,7 @@ const Pricing = ({ onPlanSelect, consultationData }) => {
             >
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <div className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-4 py-1 rounded-full text-sm font-medium flex items-center space-x-1">
+                  <div className="bg-gradient-to-br from-[#1b2644] to-blue-600  text-white px-4 py-1 rounded-full text-sm font-medium flex items-center space-x-1">
                     <Star className="w-4 h-4" />
                     <span>Most Popular</span>
                   </div>
@@ -102,7 +102,7 @@ const Pricing = ({ onPlanSelect, consultationData }) => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => handlePlanSelect(plan)}
-                className={`w-full py-4 rounded-xl font-semibold text-white shadow-lg hover:shadow-xl transition-all bg-gradient-to-r ${plan.color}`}
+                className={`w-full py-4 rounded-lg font-semibold text-white shadow-lg hover:shadow-xl transition-all bg-gradient-to-br  ${plan.color}`}
               >
                 Select {plan.name} Plan
               </motion.button>
@@ -119,19 +119,19 @@ const Pricing = ({ onPlanSelect, consultationData }) => {
           <div className="bg-white/60 backdrop-blur-sm rounded-2xl border border-white/20 shadow-lg p-6">
             <div className="flex flex-wrap justify-center items-center gap-8">
               <div className="flex items-center space-x-2">
-                <Clock className="w-5 h-5 text-teal-600" />
+                <Clock className="w-5 h-5 text-blue-900" />
                 <span className="text-gray-700">Quick Response</span>
               </div>
               <div className="flex items-center space-x-2">
-                <Users className="w-5 h-5 text-teal-600" />
+                <Users className="w-5 h-5 text-blue-900" />
                 <span className="text-gray-700">Expert Doctors</span>
               </div>
               <div className="flex items-center space-x-2">
-                <Mail className="w-5 h-5 text-teal-600" />
+                <Mail className="w-5 h-5 text-blue-900" />
                 <span className="text-gray-700">Follow-up Support</span>
               </div>
               <div className="flex items-center space-x-2">
-                <MapPin className="w-5 h-5 text-teal-600" />
+                <MapPin className="w-5 h-5 text-blue-900" />
                 <span className="text-gray-700">Global Access</span>
               </div>
             </div>

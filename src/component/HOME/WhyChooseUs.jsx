@@ -299,7 +299,7 @@ export default function WhyChooseUs() {
                                     {/* Content Side */}
                                     <div className="lg:col-span-3 p-4 md:p-8">
                                         <div className="flex md:items-center gap-3 mb-8">
-                                            <div className="w-12 h-12 flex-shrink-0 bg-[#062f95] rounded-xl flex items-center justify-center">
+                                            <div className="w-12 h-12 flex-shrink-0 bg-[#062f95] rounded-lg flex items-center justify-center">
                                                 <Award className="w-6 h-6 text-white" />
                                             </div>
                                             <h2 className=" text-[20px] md:text-[30px] font-bold  text-[#062f95]">

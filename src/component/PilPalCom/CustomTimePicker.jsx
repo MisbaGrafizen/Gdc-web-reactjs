@@ -73,7 +73,7 @@ export default function CustomTimePicker({ value, onChange, placeholder = "Selec
               <div className="flex space-x-6">
                 <div className="flex-1">
                   <label className="block text-sm font-bold text-gray-700 mb-3 text-center">Hour</label>
-                  <div className="max-h-40 overflow-y-auto border-2 border-gray-100 rounded-xl bg-gray-50">
+                  <div className="max-h-40 overflow-y-auto border-2 border-gray-100 rounded-lg bg-gray-50">
                     {hours.map((hour, index) => (
                       <motion.button
                         key={hour}
@@ -94,7 +94,7 @@ export default function CustomTimePicker({ value, onChange, placeholder = "Selec
                 </div>
                 <div className="flex-1">
                   <label className="block text-sm font-bold text-gray-700 mb-3 text-center">Minute</label>
-                  <div className="max-h-40 overflow-y-auto border-2 border-gray-100 rounded-xl bg-gray-50">
+                  <div className="max-h-40 overflow-y-auto border-2 border-gray-100 rounded-lg bg-gray-50">
                     {minutes.map((minute, index) => (
                       <motion.button
                         key={minute}

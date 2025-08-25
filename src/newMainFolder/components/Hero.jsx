@@ -14,7 +14,7 @@ const Hero = () => {
   ]
 
   return (
-    <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+    <section className="pt-[200px] pb-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center">
           <motion.h1
@@ -24,7 +24,7 @@ const Hero = () => {
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6"
           >
             Global Online{" "}
-            <span className="bg-gradient-to-r from-teal-500 to-indigo-600 bg-clip-text text-transparent">
+            <span className=" bg-gradient-to-br from-[#1b2644] to-blue-600 bg-clip-text text-transparent">
               Dental Consultation
             </span>
           </motion.h1>
@@ -45,7 +45,7 @@ const Hero = () => {
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
             onClick={scrollToConsultation}
-            className="inline-flex items-center space-x-2 px-8 py-3 bg-gradient-to-r from-teal-500 to-indigo-600 text-white rounded-2xl font-semibold text-lg shadow-xl hover:shadow-2xl transition-all duration-300"
+            className="inline-flex items-center space-x-2 px-8 py-3 bg-gradient-to-br from-[#1b2644] to-blue-600  text-white rounded-lg font-semibold text-lg shadow-xl hover:shadow-2xl transition-all duration-300"
           >
             <span>Start Consultation</span>
             <ArrowDown className="w-5 h-5" />
