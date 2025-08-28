@@ -177,32 +177,37 @@ import year from "../../../public/CoFounders/25year.png"
 import SpotlightCard from '../reactBits/SpotlightCard'
 
 export default function WhyChooseUs() {
-    const visionPoints = [
-        {
-            title: "Vision Point 1",
-            description: "One app, one card, integrated experience. Transparent, affordable Dental care.",
-            icon: <Heart className="w-5 h-5" />,
-            pattern: "dots",
-        },
-        {
-            title: "Vision Point 2",
-            description: "Scale practices without burden. Focus on care with modern tools.",
-            icon: <Zap className="w-5 h-5" />,
-            pattern: "dots",
-        },
-        {
-            title: "Vision Point 3",
-            description: "Leading tech-enabled primary care. 100 clinics, 25 hospitals, 1M+ lives by 2030.",
-            icon: <Users className="w-5 h-5" />,
-            pattern: "dots",
-        },
-        {
-            title: "Vision Point 4",
-            description: "Enhance OPD, pharmacy, diagnostics. Efficient partnerships for broader impact.",
-            icon: <Award className="w-5 h-5" />,
-            pattern: "dots",
-        },
-    ]
+
+const visionPoints = [
+  {
+    title: "Accessible Dental Care for All",
+    description:
+      "We envision a future where everyone, regardless of location or background, has access to high-quality dental care.",
+    icon: <Users className="w-5 h-5" />,
+    pattern: "dots",
+  },
+  {
+    title: "Patient-Centric Treatment",
+    description:
+      "Our care model prioritizes individual needs, creating personalized treatment plans that ensure comfort and effectiveness.",
+    icon: <Heart className="w-5 h-5" />,
+    pattern: "dots",
+  },
+  {
+    title: "Technology-Driven Excellence",
+    description:
+      "We embrace modern dental technology to enhance diagnostics, streamline treatment, and ensure precision in every procedure.",
+    icon: <Zap className="w-5 h-5" />,
+    pattern: "dots",
+  },
+  {
+    title: "Building Trust Through",
+    description:
+      "We build lifelong trust through compassionate care that respects, understands, and supports each patient's journey.",
+    icon: <Award className="w-5 h-5" />,
+    pattern: "dots",
+  },
+];
 
     return (
         <>
@@ -259,7 +264,7 @@ export default function WhyChooseUs() {
 
                                         <div className="relative p-5">
                                             {/* Creative Header */}
-                                            <div className="flex items-center gap-4 mb-6">
+                                            <div className="flex items-center gap-4 mb-4">
                                                 <div className="relative">
                                                     <div className="w-10 h-10 border-[#062f95] border-[1.2px] rounded-[7px] flex items-center justify-center  text-[#062f95] shadow-lg group-hover:scale-110 transition-transform duration-300">
                                                         {point.icon}

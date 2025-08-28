@@ -1,9 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Mail, MapPin, Phone, SendHorizontal, Clock } from "lucide-react";
 import Header from "../component/header/Header";
 import Footer from "../component/footer/Footer";
 import BottomBar from "../component/bottombar/BottomBar";
 import { ApiPost } from "../helper/axios";
+import main from '../../public/gdc/contactus/image1.webp'
+import secondImage from '../../public/gdc/contactus/image2.webp'
+import thirdImage from '../../public/gdc/contactus/image3.webp'
 
 
 
@@ -49,6 +52,19 @@ export default function ContactUs() {
     }));
   };
 
+    const images = [main, secondImage, thirdImage]; // Add your image imports here
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 3000); // 2 seconds
+
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, []);
+
   return (
     <>
       <Header />
@@ -93,25 +109,13 @@ export default function ContactUs() {
                 </div>
               </div>
               <div className="relative">
-                <div className="bg-gradient-to-br from-blue-100 to-blue-200 rounded-3xl p-6 h-96 flex items-center justify-center">
-                  <div className="text-center">
-                    <div
-                      style={{ backgroundColor: "#062f95" }}
-                      className="w-24 h-24  flex-shrink-0 rounded-full flex items-center justify-center mx-auto mb-4"
-                    >
-                      <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                        />
-                      </svg>
-                    </div>
-                    <h3 className="text-2xl font-bold text-gray-800 mb-2">Dental care Excellence</h3>
-                    <p className="text-gray-600">Committed to your wellbeing</p>
-                  </div>
-                </div>
+              <div className="bg-gradient-to-br from-blue-100 to-blue-200 rounded-3xl overflow-hidden h-96 flex items-center justify-center">
+      <img
+        className="w-[100%] h-[100%] object-cover"
+        src={images[currentIndex]}
+        alt="Slideshow"
+      />
+    </div>
               </div>
             </div>
           </div>

@@ -203,7 +203,7 @@ export default function Blog() {
 
 
             <h2 className="md:text-[45px]  text-[30px] font-[600] text-gray-800 mb-3 ">
-              Stories from <b className=" font-[600] text-[#062f95]"> Gdc Dental Care</b>
+          Secret stories behind<b className=" font-[600] text-[#062f95]">  Smile</b>
 
             </h2>
 
@@ -217,10 +217,10 @@ export default function Blog() {
             {blogPosts.map((post, index) => (
               <div
                 key={post.id}
-                className={`group flex   relative flex-shrink-0 flex-col w-[290px] bg-white h-[440px] rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300  `}
+                className={`group flex   relative flex-shrink-0 flex-col w-[290px] bg-white h-[370px] rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300  `}
               >
                 {/* Image */}
-                <div className="relative h-[220px] overflow-hidden">
+                <div className="relative h-[190px] overflow-hidden">
                   <img
                     src={post.image || "/placeholder.svg"}
                     alt={post.title}
@@ -246,9 +246,9 @@ export default function Blog() {
                   <div className=" flex flex-col gap-[px] absolute bottom-5">
 
 
-                    <div className="flex items-center justify-between  text-sm text-gray-500 mb-">
+                    {/* <div className="flex items-center justify-between  text-sm text-gray-500 mb-">
                       <div className="flex items-center gap-3">
-                        {/* <span className=" text-[10px]">{post.author}</span> */}
+                        {/* <span className=" text-[10px]">{post.author}</span> 
                         <span>•</span>
                         <span className=" text-[10px]">{post.date}</span>
                       </div>
@@ -260,12 +260,9 @@ export default function Blog() {
                           <span className=" text-[10px]">{post.views}</span>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
 
-                    <button className="group inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 text-[15px] font-medium transition-colors duration-300">
-                      Read More
-                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-                    </button>
+                 
                   </div>
                 </div>
               </div>

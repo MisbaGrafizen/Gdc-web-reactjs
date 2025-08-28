@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import about1 from '../../.././public/whyChooseUs.webp'
-import image from '../../../public/aboutus/image.webp'; 
+import image from '../../../public/gdc/herosection/aboutUs.webp'; 
 import { Link } from "react-router-dom";
 import { Calculator, TrendingUp, Shield, Award, Users, BarChart3, PieChart } from "lucide-react"
 
@@ -21,28 +21,35 @@ export default function AboutUs() {
                 {/* Badge */}
                 <div className="inline-block">
                   <span className="px-4 py-1 bg-blue-100 text-[#062f95] border border-[#062f95] rounded-full text-[14px] font-semibold tracking-wide uppercase">
-                    About Us
+                    Welcome to City Dental Hospital
                   </span>
                 </div>
 
                 {/* Main Content */}
                 <div className="space-y-3">
                   <h1 className='   font-[600]  leading-[40px] text-[#0f0f0f] pt-[10px] text-[35px] md:text-[35px]'>
-                   Providing True High Quality
+                     We make smiles
                     <b className="font-[600] text-[#062f95] pl-[10px]">
-             Post Acute Home Dental Care
+           beautiful
                     </b>
                   </h1>
 
 
                   <p className="text-[14px] text-gray-600 leading-relaxed text-justifyfont-[400]">
-                      Gdc Dental care is a Medicare‑licensed and accredited agency committed to ensuring all patients receive the highest standard of care in the comfort of their own homes.
+                    A healthy smile and better well-being, all start at <b>City Dental Hospital</b>.
                   </p>
       
 
-                  <p className="text-[14px] text-gray-600 leading-relaxed text-justifyfont-[400]">
-     Our mission is to help you regain and maximize your independence and quality of life through advanced care techniques and professional core measures practiced in hospitals.
+                  <p className="text-[14px] text-gray-600 leading-relaxed text-justify font-[400]">
+   Experience the highest standards of dental healthcare with state-of-the-art technology, durable bio-friendly materials that focus on all preventive, <span className="text-blue-600 font-medium">painless</span>, and cosmetic dental procedures in Rajkot at City Dental Hospital.
                   </p>
+                    <p className="text-[14px] text-gray-600 leading-relaxed font-[400]">
+    With years of experience, we are committed to providing patients with superior dental health and a complete range of services to give you the smile you deserve.
+  </p>
+  
+  <p className="text-[14px] text-gray-600 leading-relaxed font-[400]">
+    At City Dental Hospital, the top Dental Hospital in Gujarat, we offer flexible timing, individual attention, affordability, accurate treatment explanations, and excellent patient care. Here, we follow strict and stringent hygiene protocols.
+  </p>
                 </div>
 
                 {/* Stats */}
@@ -75,7 +82,7 @@ export default function AboutUs() {
                   {/* Main Image Container */}
                   <div className="md:h-[490px] rounded-2xl overflow-hidden shadow-2xl bg-gray-100">
                     <img
-                      src={about1}
+                      src={image}
                       alt="Professional financial services concept with wooden blocks showing intellectual property terms"
                       className="w-full h-full object-cover"
                     />

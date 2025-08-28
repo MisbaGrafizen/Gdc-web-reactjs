@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import basic from "../../../public/card/cardBasic.png"
 import gold from "../../../public/card/cardGold.png"
-
+import HeroSectionimaghe from '../../../public/gdc/herosection/sirmadam.webp'
 
 export default function HeroSection() {
     const [activeCard, setActiveCard] = useState(0)
@@ -38,7 +38,7 @@ export default function HeroSection() {
     ]
 
     return (
-        <div className="  md:h-[550px] shadow-lg px-[20px] rounded-[20px] border-[#062f95]  bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900  border  2xl:w-[1330px] md:w-[84%] w-[95%]  mx-auto overflow-hidden relative">
+        <div className="  md:h-[530px] shadow-lg px-[20px] rounded-[20px] border-[#062f95]  bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900  border  2xl:w-[1330px] md:w-[84%] w-[95%]  mx-auto overflow-hidden relative">
             {/* Background subtle pattern */}
             <div className="absolute inset-0 opacity-5">
                 <div
@@ -188,6 +188,11 @@ export default function HeroSection() {
 
 
                     </div> */}
+
+                    <div>
+
+                        <img  src={HeroSectionimaghe} />
+                    </div>
                 </div>
             </div>
         </div>

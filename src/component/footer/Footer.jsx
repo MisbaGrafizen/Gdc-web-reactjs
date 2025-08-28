@@ -172,7 +172,7 @@ export default function Footer() {
                       <li>
                         <a href="tel:+919169191291" className="mb-3">
                           <span className="ak-font-20">Phone : </span>
-                          +91 8849642442
+                          +91 1234567896
                         </a>
                       </li>
                       <li>

@@ -171,67 +171,78 @@
 // }
 import React, { useState } from "react";
 import faq from "../../../Public/mainimage.avif";
-import { Plus, Minus, Heart, Shield, Clock, MapPin } from "lucide-react"
+import { Plus, Minus,AlertTriangle,RefreshCw,FileText,MessageCircle, MapPin, Heart, Shield, DollarSign,Clock } from "lucide-react"
 
 export default function Faq() {
     const [openFaq, setOpenFaq] = useState(0)
 
-    const faqData = [
-        {
-            id: 1,
-            icon: <Heart className="w-4 h-4" />,
-            question: "What types of Dental care services does Gdc provide?",
-            answer:
-                "Gdc offers comprehensive Dental care services including general physician consultations, specialist consultations, pharmacy services, lab tests, home care services, and nutritionist consultations. Our Dental Cares provide access to a wide network of Dental care providers.",
-            category: "Services",
-            color: "from-[#062f95] to-blue-600",
-        },
-        {
-            id: 2,
-            icon: <MapPin className="w-4 h-4" />,
-            question: "Where are Gdc Dental care facilities located?",
-            answer:
-                "Gdc has an extensive network of 100+ clinics and 25+ hospitals across major cities. Our services are available nationwide with plans to expand to 1M+ lives by 2030. You can find our nearest facility through our mobile app or website.",
-            category: "Locations",
-            color: "from-[#062f95] to-blue-600",
-        },
-        {
-            id: 3,
-            icon: <Clock className="w-4 h-4" />,
-            question: "What are the operating hours for Gdc services?",
-            answer:
-                "Our digital services are available 24/7 through our mobile app. Physical clinics operate from 8:00 AM to 8:00 PM on weekdays and 9:00 AM to 6:00 PM on weekends. Emergency services are available round the clock at select locations.",
-            category: "Hours",
-            color: "from-[#062f95] to-blue-600",
-        },
-        {
-            id: 4,
-            icon: <Shield className="w-4 h-4" />,
-            question: "Do you offer emergency Dental care services?",
-            answer:
-                "Yes, Gdc provides 24/7 emergency Dental care services through our network of partner hospitals. Emergency services are covered under our Comprehensive Dental Care plan, and we also offer telemedicine consultations for urgent but non-critical situations.",
-            category: "Emergency",
-            color: "from-[#062f95] to-blue-600",
-        },
-        {
-            id: 5,
-            icon: <Heart className="w-4 h-4" />,
-            question: "How do I apply for a Gdc Dental Care?",
-            answer:
-                "You can apply for a Gdc Dental Care through our website, mobile app, or by visiting any of our clinics. The application process is simple and takes just a few minutes. Choose between our Essential (₹600/year) or Comprehensive (₹1200/year) plans based on your needs.",
-            category: "Application",
-            color: "from-[#062f95] to-blue-600",
-        },
-        {
-            id: 6,
-            icon: <Shield className="w-4 h-4" />,
-            question: "What makes Gdc different from other Dental care providers?",
-            answer:
-                "Gdc combines traditional Dental care with modern technology, offering integrated digital Dental Cares, transparent pricing, and a patient-first approach. Our 25+ years of experience, extensive network, and commitment to making Dental care accessible sets us apart.",
-            category: "About",
-            color: "from-[#062f95] to-blue-600",
-        },
-    ]
+const faqData = [
+
+  {
+    id: 2,
+    icon: <Clock className="w-4 h-4" />,
+    question: "How long does the consultation process take?",
+    answer:
+      "After you submit your information, our coordinators will contact you within 24 hours to schedule your consultation. The actual consultation call lasts 20-30 minutes for Basic plan and up to 45 minutes for Premium plan.",
+    category: "Consultation",
+    color: "from-[#062f95] to-blue-600",
+  },
+  {
+    id: 3,
+    icon: <RefreshCw className="w-4 h-4" />,
+    question: "Can I reschedule my consultation?",
+    answer:
+      "Yes, you can reschedule your consultation up to 24 hours before the scheduled time. Contact our support team or use the rescheduling link in your confirmation email.",
+    category: "Scheduling",
+    color: "from-[#062f95] to-blue-600",
+  },
+  {
+    id: 4,
+    icon: <DollarSign className="w-4 h-4" />,
+    question: "What is your refund policy?",
+    answer:
+      "We offer a full refund if you cancel within 24 hours of booking. After the consultation is completed, refunds are considered on a case-by-case basis for service quality issues.",
+    category: "Payments",
+    color: "from-[#062f95] to-blue-600",
+  },
+  {
+    id: 5,
+    icon: <FileText className="w-4 h-4" />,
+    question: "What files and photos help most for consultation?",
+    answer:
+      "Recent X-rays, OPG, dental records, and clear photos of your teeth from multiple angles are most helpful. The more comprehensive information you provide, the better our doctors can assess your case.",
+    category: "Preparation",
+    color: "from-[#062f95] to-blue-600",
+  },
+  {
+    id: 6,
+    icon: <MessageCircle className="w-4 h-4" />,
+    question: "How does the follow-up process work?",
+    answer:
+      "For Premium consultations, you get one follow-up call within 7 days. For Basic consultations, you can book additional consultations at a discounted rate. All patients receive a detailed summary email with recommendations.",
+    category: "Follow-Up",
+    color: "from-[#062f95] to-blue-600",
+  },
+  {
+    id: 7,
+    icon: <MapPin className="w-4 h-4" />,
+    question: "Do you provide treatment in India?",
+    answer:
+      "Yes, we have a state-of-the-art clinic in India. Premium consultation includes personalized travel guidance and treatment planning for patients who wish to visit India for their dental treatment.",
+    category: "Location",
+    color: "from-[#062f95] to-blue-600",
+  },
+//   {
+//     id: 8,
+//     icon: <AlertTriangle className="w-4 h-4" />,
+//     question: "What if I need emergency dental advice?",
+//     answer:
+//       "For dental emergencies, please contact your local dentist immediately. Our consultation service is for planned treatments and second opinions, not emergency care.",
+//     category: "Emergency",
+//     color: "from-[#062f95] to-blue-600",
+//   },
+];
+
 
     const toggleFaq = (id) => {
         setOpenFaq(openFaq === id ? null : id)
