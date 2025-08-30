@@ -1,5 +1,5 @@
 import React from "react"
-import doctor from "../../../public/CoFounders/Shrut.png"
+
 import { MapPin, Clock, CheckCircle } from "lucide-react"
 
 export default function Introthird() {
@@ -12,7 +12,7 @@ export default function Introthird() {
             <div className="relative z-10 md:w-[400px] bg-white rounded-2xl overflow-hidden shadow-xl border-4 border-white">
               <div className="h-[390px] relative">
                 <img
-                  src={doctor}
+                  // src={doctor}
                   alt="Dr. Haard Vasavada"
                   className="h-full w-full object-contain"
                 />

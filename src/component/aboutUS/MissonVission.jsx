@@ -6,7 +6,7 @@ export default function MissonVission() {
         <>
 
 
-            <div className="bg-gradient-to-b from-slate-50 to-white">
+            <div className="e">
                 {/* Mission Section */}
                 <div className="md:pb-12 px-4">
                     <div className=" md:w-[85%] w-[95%] mx-auto">
@@ -27,14 +27,14 @@ export default function MissonVission() {
                         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                             {/* Accessibility and Quality */}
                             <div className="group">
-                                <div className="bg-white h-[270px] rounded-[10px] border-blue-200 border-[1.4px] shadow-lg hover:shadow-xl transition-all duration-300 p-5 text-center relative overflow-hidden">
+                                <div className="bg-white h-[240px] rounded-[10px] border-blue-200 border-[1.4px] shadow-lg hover:shadow-xl transition-all duration-300 p-5 text-center relative overflow-hidden">
                                     {/* Decorative corners */}
                                     {/* <div className="absolute top-[0px]  z-[10] left-0 w-6 h-6 border-l-2 rounded-tl-[9px] border-t-2 border-blue-400"></div>
                 <div className="absolute top-0 right-0 w-6 h-6 border-r-2   rounded-tr-[9px] border-t-2 border-blue-400"></div>
                 <div className="absolute bottom-0 left-0 w-6 h-6 border-l-2 border-b-2 border-blue-400"></div>
                 <div className="absolute bottom-0 right-0 w-6 h-6 border-r-2 border-b-2 border-blue-400"></div> */}
 
-                                    <div className="mb-6">
+                                    <div className="mb-4">
                                         <div className="w-14 h-14 mx-auto bg-gradient-to-tr  from-blue-600 via-blue-900 to-slate-600 rounded-[8px] flex items-center justify-center  border-blue-200 group-hover:bg-blue-800 transition-colors duration-300">
                                             <Shield className="w-6 h-6 text-white" />
                                         </div>
@@ -52,13 +52,13 @@ export default function MissonVission() {
 
                             {/* Specialist Expertise */}
                             <div className="group">
-                                <div className="bg-white h-[270px] rounded-[10px] border-blue-200 border-[1.4px] shadow-lg hover:shadow-xl transition-all duration-300 p-5 text-center relative overflow-hidden">
+                                <div className="bg-white h-[240px] rounded-[10px] border-blue-200 border-[1.4px] shadow-lg hover:shadow-xl transition-all duration-300 p-5 text-center relative overflow-hidden">
                                     {/* <div className="absolute top-0 left-0 w-6 h-6 border-l-2 border-t-2 border-blue-400"></div>
                 <div className="absolute top-0 right-0 w-6 h-6 border-r-2 border-t-2 border-blue-400"></div>
                 <div className="absolute bottom-0 left-0 w-6 h-6 border-l-2 border-b-2 border-blue-400"></div>
                 <div className="absolute bottom-0 right-0 w-6 h-6 border-r-2 border-b-2 border-blue-400"></div> */}
 
-                                    <div className="mb-6">
+                                    <div className="mb-4">
                                        <div className="w-14 h-14 mx-auto bg-gradient-to-tr  from-blue-600 via-blue-900 to-slate-600 rounded-[8px] flex items-center justify-center  border-blue-200 group-hover:bg-blue-800 transition-colors duration-300">
                                             <Heart className="w-6 h-6 text-white" />
                                         </div>
@@ -74,13 +74,13 @@ export default function MissonVission() {
 
                             {/* Affordability */}
                             <div className="group">
-                                <div className="bg-white h-[270px] rounded-[10px] border-blue-200 border-[1.4px] shadow-lg hover:shadow-xl transition-all duration-300 p-5 text-center relative overflow-hidden">
+                                <div className="bg-white h-[240px] rounded-[10px] border-blue-200 border-[1.4px] shadow-lg hover:shadow-xl transition-all duration-300 p-5 text-center relative overflow-hidden">
                                     {/* <div className="absolute top-0 left-0 w-6 h-6 border-l-2 border-t-2 border-blue-400"></div>
                 <div className="absolute top-0 right-0 w-6 h-6 border-r-2 border-t-2 border-blue-400"></div>
                 <div className="absolute bottom-0 left-0 w-6 h-6 border-l-2 border-b-2 border-blue-400"></div>
                 <div className="absolute bottom-0 right-0 w-6 h-6 border-r-2 border-b-2 border-blue-400"></div> */}
 
-                                    <div className="mb-6">
+                                    <div className="mb-4">
                                         <div className="w-14 h-14 mx-auto bg-gradient-to-tr  from-blue-600 via-blue-900 to-slate-600 rounded-[8px] flex items-center justify-center  border-blue-200 group-hover:bg-blue-800 transition-colors duration-300">
                                             <Users className="w-6 h-6 text-white" />
                                         </div>

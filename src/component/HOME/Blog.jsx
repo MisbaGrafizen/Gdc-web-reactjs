@@ -3,98 +3,100 @@ import { useNavigate } from "react-router-dom";
 import { Calendar, Clock, User, ArrowRight, Tag, TrendingUp, Eye } from "lucide-react"
 
 // Replace with real image imports or public paths
-import iconImg1 from "../../../public/mainimage.avif";
-import iconImg2 from "../../../public/mainimage.avif";
-import iconImg3 from "../../../public/mainimage.avif";
-import iconImg4 from "../../../public/mainimage.avif";
+import iconImg1 from "../../../public/gdc/contactus/image1.webp";
+
 import { BookOpen, Feather } from "lucide-react"
 
 export default function Blog() {
   const [hoveredCard, setHoveredCard] = useState(null)
 
-  const blogPosts = [
-    {
-      id: 1,
-      title: "The Future of Digital Dental care: How Gdc is Leading the Revolution",
-      excerpt:
-        "Discover how Gdc's innovative approach to digital health cards is transforming the Dental care landscape and making quality   accessible to millions.",
-      author: "Dr. Sarah Johnson",
-      date: "Dec 15, 2024",
-      readTime: "8 min read",
-      category: "Dental care",
-      image: iconImg1,
-      featured: true,
-      trending: true,
-      views: "2.3k",
-    },
-    {
-      id: 2,
-      title: "Understanding Your Gdc Health Card Benefits",
-      excerpt:
-        "A comprehensive guide to maximizing your health card benefits and accessing quality Dental care services.",
-      author: "Dr. Michael Chen",
-      date: "Dec 12, 2024",
-      readTime: "5 min read",
-      category: "Dental care",
-      image: iconImg2,
-      featured: false,
-      trending: false,
-      views: "1.8k",
-    },
-    {
-      id: 3,
-      title: "AI in Dental care: Improving Patient Outcomes",
-      excerpt: "Exploring how artificial intelligence is revolutionizing diagnosis and treatment in modern Dental care.",
-      author: "Dr. Emily Rodriguez",
-      date: "Dec 10, 2024",
-      readTime: "6 min read",
-      category: "Technology",
-      image: iconImg3,
-      featured: false,
-      trending: true,
-      views: "3.1k",
-    },
-    {
-      id: 4,
-      title: "Preventive Care: Your First Line of Defense",
-      excerpt:
-        "Learn why preventive Dental care is crucial and how Gdc's comprehensive plans support your wellness journey.",
-      author: "Dr. James Wilson",
-      date: "Dec 8, 2024",
-      readTime: "4 min read",
-      category: "Wellness",
-      image: iconImg4,
-      featured: false,
-      trending: false,
-      views: "1.2k",
-    },
-    {
-      id: 5,
-      title: "Telemedicine: Dental care at Your Fingertips",
-      excerpt: "How remote consultations are making Dental care more accessible and convenient for patients everywhere.",
-      author: "Dr. Lisa Park",
-      date: "Dec 5, 2024",
-      readTime: "7 min read",
-      category: "Technology",
-      image: iconImg4,
-      featured: false,
-      trending: false,
-      views: "2.7k",
-    },
-    {
-      id: 6,
-      title: "Community Health Initiatives: Making a Difference",
-      excerpt: "Discover how Gdc's community programs are improving Dental care access in underserved areas.",
-      author: "Dr. Robert Kim",
-      date: "Dec 3, 2024",
-      readTime: "5 min read",
-      category: "Community",
-      image: iconImg1,
-      featured: false,
-      trending: false,
-      views: "1.5k",
-    },
-  ]
+const blogPosts = [
+  {
+    id: 1,
+    title: "How to Build a Daily Dental Care Routine That Works",
+    excerpt:
+      "From brushing to flossing and diet, learn practical tips to create a consistent oral hygiene routine that improves long-term dental health.",
+    author: "Dr. Ayesha Mehta",
+    date: "Aug 25, 2025",
+    readTime: "6 min read",
+    category: "Oral Hygiene",
+    image: iconImg1,
+    featured: true,
+    trending: true,
+    views: "3.2k",
+  },
+  {
+    id: 2,
+    title: "Why Regular Dental Checkups Matter More Than You Think",
+    excerpt:
+      "Routine checkups can help detect problems early — here's why skipping them may cost more in the long run.",
+    author: "Dr. Kunal Singh",
+    date: "Aug 22, 2025",
+    readTime: "5 min read",
+    category: "Prevention",
+    image: iconImg1,
+    featured: false,
+    trending: true,
+    views: "2.1k",
+  },
+  {
+    id: 3,
+    title: "Bleeding Gums? Here's What Your Mouth Is Trying to Tell You",
+    excerpt:
+      "Gum bleeding is not normal. Understand common causes and when to seek professional help.",
+    author: "Dr. Meera Shah",
+    date: "Aug 20, 2025",
+    readTime: "4 min read",
+    category: "Gum Health",
+    image: iconImg1,
+    featured: false,
+    trending: false,
+    views: "1.6k",
+  },
+  {
+    id: 4,
+    title: "How Diet Impacts Your Teeth: Foods to Embrace & Avoid",
+    excerpt:
+      "Did you know your daily meals directly affect your enamel? Find out which foods protect vs. harm your dental health.",
+    author: "Dr. Rohan Patel",
+    date: "Aug 18, 2025",
+    readTime: "7 min read",
+    category: "Nutrition",
+    image: iconImg1,
+    featured: false,
+    trending: false,
+    views: "2.4k",
+  },
+  {
+    id: 5,
+    title: "Top 5 Myths About Brushing Teeth—Busted!",
+    excerpt:
+      "Brushing harder isn’t better. Discover common brushing misconceptions and the truth behind them.",
+    author: "Dr. Priya Bansal",
+    date: "Aug 15, 2025",
+    readTime: "6 min read",
+    category: "Mythbusters",
+    image: iconImg1,
+    featured: false,
+    trending: false,
+    views: "1.9k",
+  },
+  {
+    id: 6,
+    title: "Sensitive Teeth: Causes, Treatments & Daily Care Tips",
+    excerpt:
+      "Struggling with tooth sensitivity? Learn about triggers, treatments, and how to ease pain naturally.",
+    author: "Dr. Imran Qureshi",
+    date: "Aug 12, 2025",
+    readTime: "5 min read",
+    category: "Tooth Sensitivity",
+    image: iconImg1,
+    featured: false,
+    trending: false,
+    views: "2.2k",
+  },
+];
+
 
 
   const getColorClasses = (color) => {

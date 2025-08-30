@@ -275,14 +275,14 @@ const visionPoints = [
                                                 </div>
 
                                                 <div className="flex-1">
-                                                    <h3 className="text-xl font-[600] text-[#062f95] mb-2 group-hover:text-indigo-600 transition-colors">
+                                                    <h3 className="text-[15px] font-[600] text-[#062f95] leading-6 mb-2 group-hover:text-indigo-600 transition-colors">
                                                         {point.title}
                                                     </h3>
                                                     {/* <div className="w-12 h-1 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-full"></div> */}
                                                 </div>
                                             </div>
 
-                                            <p className="text-[#062f95] leading-relaxed text-[14px]">{point.description}</p>
+                                            <p className="text-[#062f95] leading-[20px] text-[14px]">{point.description}</p>
 
                                             {/* Decorative Corner */}
                                             {/* <div className="absolute bottom-4 right-4 w-8 h-8 border-2 border-blue-200 rounded-full opacity-30 group-hover:opacity-60 transition-opacity"></div> */}

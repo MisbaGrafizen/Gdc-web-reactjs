@@ -24,17 +24,17 @@ export default function AboutUsMainPage() {
       <Header />
       <div className=" font-Poppins flex md:pt-[180px] pt-[100px]  gap-[90px] flex-col bg-[#ffffff57] w-[100%] h-[100%]">
 
-        <section className=" px-4 mb-[40px] md:px-8">
+        <section className=" md77px-4  mb-[40px] md11:px-8">
           <div className="  w-[90%] md:w-[85%] mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               {/* Left side - Images */}
               <div className="relative">
                 {/* Main doctor image */}
-                <div className="relative md:w-[90%] shadow-xl rounded-[20px]">
-                  <img src={image} alt="Smiling male doctor in white coat with stethoscope giving thumbs up" className="w-full h-auto rounded-[20px] rounded-b-[20px] object-cover" />
+                <div className="relative md11:w-[90%]    rounded-[20px]">
+                  <img src={image} alt="Smiling male doctor in white coat with stethoscope giving thumbs up" className="w-[500px]  mx-auto h-[400px] rounded-[20px] rounded-b-[20px] object-cover" />
                 </div>
                 {/* Smaller doctor image - positioned as overlay */}
-                <div className="absolute -bottom-8 -left-8 w-48 h-48 rounded-[30px] overflow-hidden border-[10px] border-white shadow-lg">
+                <div className="absolute -bottom-8 md77:-left-8 w-48 h-48 rounded-[30px] overflow-hidden border-[10px] border-white shadow-lg">
                   <img src={aboutus2} alt="Female Dental care professional with glasses and stethoscope" width={200} height={200} className="w-[400px] h-
                    object-cover" />
                 </div>
@@ -117,13 +117,13 @@ export default function AboutUsMainPage() {
                         <div className="grid md:grid-cols-3 gap-8 mb-[30px] max-w-6xl mx-auto">
                             {/* Trust and Preference */}
                             <div className="group">
-                                <div className="bg-white h-[270px] rounded-[10px] border-blue-200 border-[1.4px] shadow-lg hover:shadow-xl transition-all duration-300 p-5 text-center relative overflow-hidden">
+                          <div className="bg-white h-[240px] rounded-[10px] border-blue-200 border-[1.4px] shadow-lg hover:shadow-xl transition-all duration-300 p-5 text-center relative overflow-hidden">
                                     {/* <div className="absolute top-0 left-0 w-6 h-6 border-l-2 border-t-2 border-blue-400"></div>
                 <div className="absolute top-0 right-0 w-6 h-6 border-r-2 border-t-2 border-blue-400"></div>
                 <div className="absolute bottom-0 left-0 w-6 h-6 border-l-2 border-b-2 border-blue-400"></div>
                 <div className="absolute bottom-0 right-0 w-6 h-6 border-r-2 border-b-2 border-blue-400"></div> */}
 
-                                    <div className="mb-6">
+                                    <div className="mb-5">
                                         <div className="w-14 h-14 mx-auto bg-gradient-to-tr  from-blue-600 via-blue-900 to-slate-600 rounded-[8px] flex items-center justify-center  border-blue-200 group-hover:bg-blue-800 transition-colors duration-300">
                                             <Eye className="w-6 h-6 text-white" />
                                         </div>
@@ -139,13 +139,13 @@ export default function AboutUsMainPage() {
 
                             {/* Personalized and Expert Care */}
                             <div className="group">
-                                <div className="bg-white h-[270px] rounded-[10px] border-blue-200 border-[1.4px] shadow-lg hover:shadow-xl transition-all duration-300 p-5 text-center relative overflow-hidden">
+                          <div className="bg-white h-[240px] rounded-[10px] border-blue-200 border-[1.4px] shadow-lg hover:shadow-xl transition-all duration-300 p-5 text-center relative overflow-hidden">
                                     {/* <div className="absolute top-0 left-0 w-6 h-6 border-l-2 border-t-2 border-blue-400"></div>
                 <div className="absolute top-0 right-0 w-6 h-6 border-r-2 border-t-2 border-blue-400"></div>
                 <div className="absolute bottom-0 left-0 w-6 h-6 border-l-2 border-b-2 border-blue-400"></div>
                 <div className="absolute bottom-0 right-0 w-6 h-6 border-r-2 border-b-2 border-blue-400"></div> */}
 
-                                    <div className="mb-6">
+                                    <div className="mb-5">
                                         <div className="w-14 h-14 mx-auto bg-gradient-to-tr  from-blue-600 via-blue-900 to-slate-600 rounded-[8px] flex items-center justify-center  border-blue-200 group-hover:bg-blue-800 transition-colors duration-300">
                                             <Target className="w-6 h-6 text-white" />
                                         </div>
@@ -163,13 +163,13 @@ export default function AboutUsMainPage() {
 
                             {/* Community Empowerment */}
                             <div className="group">
-                                <div className="bg-white h-[270px] rounded-[10px] border-blue-200 border-[1.4px] shadow-lg hover:shadow-xl transition-all duration-300 p-5 text-center relative overflow-hidden">
+                          <div className="bg-white h-[240px] rounded-[10px] border-blue-200 border-[1.4px] shadow-lg hover:shadow-xl transition-all duration-300 p-5 text-center relative overflow-hidden">
                                     {/* <div className="absolute top-0 left-0 w-6 h-6 border-l-2 border-t-2 border-blue-400"></div>
                 <div className="absolute top-0 right-0 w-6 h-6 border-r-2 border-t-2 border-blue-400"></div>
                 <div className="absolute bottom-0 left-0 w-6 h-6 border-l-2 border-b-2 border-blue-400"></div>
                 <div className="absolute bottom-0 right-0 w-6 h-6 border-r-2 border-b-2 border-blue-400"></div> */}
 
-                                    <div className="mb-6">
+                                    <div className="mb-5">
                                         <div className="w-14 h-14 mx-auto bg-gradient-to-tr  from-blue-600 via-blue-900 to-slate-600 rounded-[8px] flex items-center justify-center  border-blue-200 group-hover:bg-blue-800 transition-colors duration-300">
                                             <Globe className="w-6 h-6 text-white" />
                                         </div>
@@ -213,7 +213,7 @@ export default function AboutUsMainPage() {
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
-          className="mb-[50px] text-center font-Poppins w-[66%] mx-auto"
+          className="mb-[50px] text-center font-Poppins w-[90%] md11:w-[66%] mx-auto"
         >
           <div className="bg-gradient-to-r from-teal-50 to-indigo-50 rounded-2xl border border-teal-100 p-8">
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Still have questions?</h3>

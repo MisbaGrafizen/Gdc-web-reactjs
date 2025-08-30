@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import about1 from '../../.././public/whyChooseUs.webp'
+import about1 from '../../.././public/why-chosse.webp'
 import image from '../../../public/gdc/herosection/aboutUs.webp'; 
 import { Link } from "react-router-dom";
 import { Calculator, TrendingUp, Shield, Award, Users, BarChart3, PieChart } from "lucide-react"

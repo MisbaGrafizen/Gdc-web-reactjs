@@ -34,14 +34,14 @@ export default function Footer() {
 
        <div className="company-info md:hidden block md:pt-[60px] mx-auto md:w-[500px]">
                 <a className="w-[100%] mx-auto">
-                  <img className=' w-[250px] mx-auto mb-[30px]' src={logo} alt="..." />
+                           <h1 className=' font-[500] text-[85px] w-fit mx-auto leading-[80px] mb-[15px] font-Borel-cursive text-[#fff]'>gdc</h1>
                 </a>
                 <p className="text-[17px] md:text-[15px] text-center text-white mb-[20px]">
                   We are a team of dedicated financial experts committed to guiding you towards financial growth and success.
                 </p>
 
 
-                <div className="social-icon w-fit  mt-[50px] mx-auto">
+                <div className="social-icon w-fit  md:mt-[50px] mx-auto">
                   <a href="#" className="icon">
                     <svg
                       width="25"
@@ -201,7 +201,7 @@ export default function Footer() {
                       <li>
                         <a href="tel:+919169191291" className="mb-3">
                           <span className="ak-font-20">Phone : </span>
-                          +91 234567
+                          +91 2345675665
                         </a>
                       </li>
                       <li>
@@ -324,9 +324,9 @@ export default function Footer() {
                       <a href='/about-us' className=' cursor-pointer'>About Us</a>
                     </li>
 
-                    <li>
+                    {/* <li>
                       <a href='/' className=' cursor-pointer'>Our Services</a>
-                    </li>
+                    </li> */}
                     <li>
                       <a href='/doctor-listing' className=' cursor-pointer'>Our Doctors
                       </a>
@@ -352,7 +352,7 @@ export default function Footer() {
                     <input
                       type="email"
                       placeholder="Your Email Address"
-                      className={`w-full px-4 py-[10px]  bg-[#fff] border-[1.3px] font-Poppins font-[400]  text-white  border-[#fff] rounded-[9px]  focus:outline-none transition-all duration-200 ${emailFocus ? "ring-2 ring-[#005c95] ring-opacity-50" : ""
+                      className={`w-full px-4 py-[10px]  bg-[#fff] border-[1.3px] font-Poppins font-[400]  t  border-[#fff] rounded-[9px]  focus:outline-none transition-all duration-200 ${emailFocus ? "ring-2 ring-[#005c95] ring-opacity-50" : ""
                         }`}
                       onFocus={() => setEmailFocus(true)}
                       onBlur={() => setEmailFocus(false)}

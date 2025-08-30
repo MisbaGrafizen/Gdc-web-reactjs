@@ -131,7 +131,7 @@ const OnlineConsultation = ({ onPlanSelect }) => {
   }
 
   return (
-    <section id="consultation" className="py-16 px-4 sm:px-6 lg:px-8">
+    <section id="consultation" className="py-16 px-4 lg:px-8">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ y: 50, opacity: 0 }}
@@ -147,7 +147,7 @@ const OnlineConsultation = ({ onPlanSelect }) => {
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
-          className="bg-white/60 backdrop-blur-sm rounded-2xl border border-white/20 shadow-xl p-8"
+          className="bg-white/60 backdrop-blur-sm  rounded-2xl border  shadow-xl p-[16px] md77:p-8"
         >
           <Stepper currentStep={currentStep} />
 

@@ -17,7 +17,7 @@ const Stepper = ({ currentStep }) => {
           <div key={step.number} className="flex items-center">
             <motion.div
               whileHover={{ scale: 1.1 }}
-              className={`flex items-center justify-center w-10 h-10 rounded-full border-2 ${
+              className={`flex items-center flex-shrink-0 justify-center w-10 h-10 rounded-full border-2 ${
                 currentStep > step.number
                   ? "bg-blue-800 border-blue-800 text-white"
                   : currentStep === step.number
@@ -33,7 +33,7 @@ const Stepper = ({ currentStep }) => {
             </motion.div>
 
             <div className="ml-3">
-              <p className={`text-sm font-medium ${currentStep >= step.number ? "text-gray-900" : "text-gray-400"}`}>
+              <p className={` md77:block hidden text-[12px] md77:text-sm font-medium ${currentStep >= step.number ? "text-gray-900" : "text-gray-400"}`}>
                 {step.title}
               </p>
             </div>

@@ -124,7 +124,7 @@ export default function Home() {
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
-          className="mb-[50px] text-center font-Poppins w-[66%] mx-auto"
+          className="mb-[50px] text-center font-Poppins w-[90%] md11:w-[66%] mx-auto"
         >
           <div className="bg-gradient-to-r from-teal-50 to-indigo-50 rounded-2xl border border-teal-100 p-8">
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Still have questions?</h3>

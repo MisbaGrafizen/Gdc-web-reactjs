@@ -1,15 +1,19 @@
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import logo from "../../../public/clinicLogo.png";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+
 import AppointmentBookingModalRefined from "../modals/AppointmentBookingModalRefined";
 
 export default function Header() {
   const location = useLocation();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const currentPath = location.pathname;
+const navigate = useNavigate
 
+const handleAppoinment =()=>{
+  navigate("/appoinment")
+}
   const navLinks = [
-    { path: "/home", label: "Home" },
+    { path: "/", label: "Home" },
     { path: "/about-us", label: "About Us" },
     { path: "/doctor-listing", label: "Doctors" },
     { path: "/subcriptions", label: "Subscription" },
@@ -38,14 +42,6 @@ export default function Header() {
             </div>
           </div>
 
-          <div className="items-center px-[14px] gap-[10px] shadow-md flex w-[300px] h-[40px] border-[1.3px] rounded-[20px]">
-            <i className="fa-regular fa-magnifying-glass"></i>
-            <input
-              placeholder="search for departments, doctors..."
-              className="h-full font-[400] w-full text-[14px] outline-none"
-              type="text"
-            />
-          </div>
 
           <div className="flex gap-2">
             {["facebook-f", "twitter", "instagram", "linkedin-in"].map((icon) => (
@@ -64,14 +60,14 @@ export default function Header() {
                             <h1 className=' font-[500] text-[45px] w-fit mx-auto leading-[40px] mb-[-20px] font-Borel-cursive text-[#062f95]'>gdc</h1>
             </Link>
 
-            <div className="flex md:w-[80%] 2xl:w-[830px] mt-[5px] items-center justify-end px-[20px] md:items-start">
+            <div className="flex  w-[] md11:w-[80%] 2xl:w-[830px] mt-[5px] items-center md11:justify-end md11:px-[20px] md:items-start">
               <div className="w-fit flex justify-end">
-                <div className="xl:text-[14px] gap-[15px] text-[#000] items-center pl-[20px] font-Montserrat mt-[-0.4%] flex font-[600] justify-end md36:hidden md:flex">
+                <div className="xl:text-[14px] gap-[8px] md11:gap-[15px] text-[#000] items-center pl-[20px] font-Montserrat mt-[-0.4%] flex font-[600] justify-end md36:hidden md:flex">
                   {navLinks.map(({ path, label }, index) => (
                     <React.Fragment key={path}>
                       <Link
                         to={path}
-                        className={`cursor-pointer font-[400] font-Poppins ${currentPath === path ? "text-[#062f95]" : "text-[#000]"}`}
+                        className={`cursor-pointer md11:text-[15px] text-[13px] font-[400] font-Poppins ${currentPath === path ? "text-[#062f95]" : "text-[#000]"}`}
                       >
                         {label}
                       </Link>
@@ -80,13 +76,16 @@ export default function Header() {
                       )}
                     </React.Fragment>
                   ))}
+<Link  className=" w-fit" to="/appoinment" >
+
 
                   <button
                     className="flex text-[#fff] font-[500] py-[8px] w-fit px-[10px] rounded-[7px] bg-gradient-to-br from-[#1b2644] to-blue-600"
-                    onClick={() => setIsModalOpen(true)}
+                    onClick={handleAppoinment}
                   >
                     Appointment
                   </button>
+                  </Link>
                 </div>
               </div>
 
@@ -94,17 +93,19 @@ export default function Header() {
             </div>
 
             {/* Mobile Button */}
+
             <button
               className="flex md:hidden h-[35px] text-[#fff] text-[14px] font-[500] items-center w-fit px-[10px] rounded-[7px] bg-gradient-to-br from-[#1b2644] to-blue-600"
-              onClick={() => setIsModalOpen(true)}
+              onClick={handleAppoinment}
             >
               Appointment
             </button>
+
           </div>
         </div>
       </div>
 
-      <AppointmentBookingModalRefined isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+    
     </>
   );
 }

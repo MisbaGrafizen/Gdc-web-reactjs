@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import logo from "../../../public/clinicLogo1.png"
+
 
 
 export default function GdcCardPopup({ isOpen, onClose }) {

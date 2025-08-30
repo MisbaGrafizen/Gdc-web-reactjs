@@ -23,7 +23,7 @@ export default function Banner() {
       </div>
 
       {/* Title */}
-      <h2 className="md:text-[26px] pl-[85px] md:flex hidden font-[600] text-gray-900 font-Poppins">
+      <h2 className="md:text-[26px] pl-[105px] md:flex hidden font-[600] text-gray-900 font-Poppins">
         We Make Smiles Beautiful
       </h2>
     </div>

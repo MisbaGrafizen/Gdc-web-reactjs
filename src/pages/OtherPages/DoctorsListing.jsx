@@ -112,7 +112,7 @@ const doctors = [
 
       <Header />
 
-       <div className=" pt-[160px] pb-[60px] font-Poppins 2xl:w-[1350px] mx-auto  w-[80%]">
+       <div className=" pt-[160px] pb-[60px] font-Poppins 2xl:w-[1350px] mx-auto  w-[90%]">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">

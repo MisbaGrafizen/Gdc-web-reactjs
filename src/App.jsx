@@ -24,6 +24,7 @@ import CardValidPage from "./pages/CardValidPage";
 import LandingLogin from "./pages/home/LandingLogin";
 import BottomBar from "./component/bottombar/BottomBar";
 import Page from "./newMainFolder/app/page";
+import Appoinments from "./pages/Appoinments";
 
 
 
@@ -51,8 +52,8 @@ function App() {
 <ScrollToTop />
 
         <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/" element={<Page />} />
+          <Route path="/" element={<Home />} />
+          {/* <Route path="/" element={<Page />} /> */}
 
            <Route path="/about-us" element={<AboutUsMainPage />} />
           {/* <Route path="/treatment" element={<ServicePage />} /> */}
@@ -64,6 +65,8 @@ function App() {
           <Route path="/subcriptions-details" element={<SubcriptionDetailsPage />} />
           <Route path="/pillpal" element={<PillPlaMainPage />} />
           <Route path="/mycard" element={<CardValidPage />} />
+          <Route path="/appoinment" element={<Appoinments />} />
+
 
 
 

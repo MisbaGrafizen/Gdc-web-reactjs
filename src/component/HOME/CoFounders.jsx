@@ -1,8 +1,5 @@
 import React from 'react'
-import ProfileCard from '../reactBits/ProfileCardComponent'
-import Pryank from "../../../public/CoFounders/Priyank.png"
-import Haard from "../../../public/CoFounders/Haard Vasavada.png"
-import Shrut from "../../../public/CoFounders/Shrut.png"
+
 import TiltedCard from '../reactBits/TiltedCard'
 
 

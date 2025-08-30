@@ -8,11 +8,11 @@ export default function BottomBar() {
   // Determine the active tab based on the current pathname
   const getActiveTab = () => {
     const path = location.pathname;
-    if (path === "/home") return "Home";
+    if (path === "/") return "Home";
     if (path === "/about-us") return "About";
     if (path === "/doctor-listing") return "Doctros";
     if (path === "/contact-us") return "Contact";
-    if (path === "/my-account") return "Cart";
+    if (path === "/appoinment") return "Cart";
     return ""; // Default for unknown paths
   };
 
@@ -21,7 +21,7 @@ export default function BottomBar() {
   const handleMyOrderClick = () => {
 
     // Navigate to My Account with the "orders" tab selected
-    navigate("/my-account", { state: { selectedMenu: "orders" } });
+    navigate("/appoinment");
 
   };
 

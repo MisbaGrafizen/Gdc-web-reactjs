@@ -27,7 +27,7 @@ export default function SubscriptionPage() {
           {/* Header */}
           <div className="text-center mb-20">
             <h1 className="text-5xl font-[600] text-[#062f95] mb-6 tracking-tight">
-              Choose Your               Health Journey
+              Choose Your                Journey
               <span className=" text-[#062f95]">
 
               </span>
@@ -50,16 +50,12 @@ export default function SubscriptionPage() {
                 <div className="absolute inset-0 bg-black/10 rounded-[19px] border-[1.2px] transform -rotate-1 group-hover:-rotate-3 transition-all duration-500 blur-sm"></div> */}
 
                   {/* Main Card Container */}
-                  <div className="relative bg-white rounded-[19px] border-[1.2px] p-6 transform  transition-all duration-500 shadow-2xl group-hover:shadow-blue-500/25">
+                  <div className="relative bg-white min-h-[410px] rounded-[19px] border-[1.2px] p-6 transform  transition-all duration-500 shadow-2xl group-hover:shadow-blue-500/25">
                     {/* Card Image Container */}
                     <div className="relative mb-5">
                       <div className="w-full">
                         {/* Placeholder for card image */}
-                        <img
-                          src={card1}
-                          alt="Essential Health Card"
-                          className="w-full h-[200px]"
-                        />
+                 
 
                       </div>
 
@@ -71,19 +67,23 @@ export default function SubscriptionPage() {
 
                     {/* Plan Details */}
                     <div className="text-center mb-5">
+
+                      <div className=' flex justify-center items-center mx-auto mb-[10px]  rounded-[8px] bg-blue-600  w-[60px] h-[60px]'>
+
+                        <i className="fa-solid text-[#fff] text-[26px]  fa-dollar-sign"></i>
+                      </div>
                       <h2 className="text-[17px] font-[700] text-gray-800 mb-">Essential Dental Care</h2>
-                      <p className="text-gray-600  text-[13px] mb-4">Perfect for individuals</p>
+
 
                     </div>
 
                     {/* Features */}
                     <div className="space-y-3 mb-8">
                       {[
-                        "Unlimited GP Consultations",
-                        "6 Specialist Consultations FREE",
-                        "Pharmacy - Up to 15% OFF",
-                        "Lab Tests - Up to 25% OFF",
-                        "FREE Nutritionist Consultation",
+                              "Review of history, photos, reports",
+                      "Live call 20–30 min",
+                      "Summary email & guidance",
+                      "Discussion of treatment options"
                       ].map((feature, index) => (
                         <div key={index} className="flex items-center group/item">
                           <div className="w-5 h-5 bg-blue-100 rounded-full flex items-center justify-center mr-3 group-hover/item:bg-blue-200 transition-colors">
@@ -103,8 +103,8 @@ export default function SubscriptionPage() {
                     </div>
 
                     {/* CTA Button */}
-                    <button className="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white font-[600] py-3 px-6 rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform  shadow-lg">
-                      Active now just at   :-  ₹ XXX
+                    <button className="w-full mt-[30px] bg-gradient-to-r from-blue-600 to-blue-700 text-white font-[600] py-3 px-6 rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform  shadow-lg">
+                      Active now just at   :-  $49
                     </button>
 
 
@@ -131,12 +131,7 @@ export default function SubscriptionPage() {
                       <div className="w-full ">
                         {/* Placeholder for card image */}
                         <div className="w-full">
-                          {/* Placeholder for card image */}
-                          <img
-                            src={card2}
-                            alt="Essential Health Card"
-                            className="w-full h-[200px]"
-                          />
+            
 
                         </div>
                       </div>
@@ -151,8 +146,13 @@ export default function SubscriptionPage() {
 
 
                       <div className="text-center mb-4">
+
+                      <div className=' flex justify-center items-center mx-auto mb-[10px]  rounded-[8px] bg-yellow-600 w-[60px] h-[60px]'>
+
+                        <i className="fa-solid text-[#fff] text-[26px]  fa-dollar-sign"></i>
+                      </div>
                         <h2 className="text-[17px] font-[700] text-gray-800 mb-">Comprehensive Dental Care</h2>
-                        <p className="text-gray-600 mb-4">Ideal for families</p>
+             
 
                         {/* Price Display */}
 
@@ -163,11 +163,10 @@ export default function SubscriptionPage() {
                     {/* Features */}
                     <div className="space-y-3 mb-6">
                       {[
-                        "Everything in Essential +",
-                        "Family Coverage (4 members)",
-                        "Priority Booking",
-                        "Annual Health Check-up",
-                        "24/7 Telemedicine Support",
+                                   "Full expert review of clinical data, reports, X-rays",
+                      "One follow-up within 7 days",
+                      "Personalized travel guidance to 🇮🇳 India",
+                      "Ideal for complex cases (All-on-4/6, full-mouth rehab, cosmetic makeovers, veneers, aligners) & NRIs"
                       ].map((feature, index) => (
                         <div key={index} className="flex items-center group/item">
                           <div className="w-5 h-5 bg-yellow-100 rounded-full flex items-center justify-center mr-3 group-hover/item:bg-yellow-200 transition-colors">
@@ -188,7 +187,7 @@ export default function SubscriptionPage() {
 
                     {/* CTA Button */}
                     <button className="w-full bg-gradient-to-r from-yellow-600 to-yellow-700 text-white font-[600] py-3 px-6 rounded-lg hover:from-yellow-700 hover:to-yellow-800 transition-all duration-300 transform  shadow-lg">
-                      Active now just at   :-  ₹ XXX
+                      Active now just at   :- $99
                     </button>
 
 

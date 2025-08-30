@@ -38,7 +38,7 @@ export default function HeroSection() {
     ]
 
     return (
-        <div className="  md:h-[530px] shadow-lg px-[20px] rounded-[20px] border-[#062f95]  bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900  border  2xl:w-[1330px] md:w-[84%] w-[95%]  mx-auto overflow-hidden relative">
+        <div className="  md11:h-[500px] shadow-lg md77:px-[20px] rounded-[20px] border-[#062f95]  bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900  border  2xl:w-[1330px] md:w-[84%] w-[95%]  mx-auto overflow-hidden relative">
             {/* Background subtle pattern */}
             <div className="absolute inset-0 opacity-5">
                 <div
@@ -50,10 +50,10 @@ export default function HeroSection() {
                 ></div>
             </div>
 
-            <div className="relative z-10   mx-auto md:px-4 px-2 py-8  flex items-center">
-                <div className="grid lg:grid-cols-2 gap-16 items-center w-full">
+            <div className="relative z-10   mx-auto md:px-4 px-2 pt-8 md77:py-8  flex items-center">
+                <div className=" flex md11:flex-row  flex-col gap-16 items-start w-full">
                     {/* Left Side - Text Content */}
-                    <div className="space-y-7 flex flex-col " >
+                    <div className="space-y-7 px-[20px] md11:w-[70%] flex flex-col " >
                         {/* Badge */}
                         <div className="inline-flex w-fit items-center gap-2 backdrop-blur-xl bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-400/30 border-[#062e95] rounded-full px-3 py-1">
                             <div className="w-2 h-2 bg-green-300 rounded-full animate-pulse"></div>
@@ -189,9 +189,9 @@ export default function HeroSection() {
 
                     </div> */}
 
-                    <div>
+                    <div className=" md77:h-[480px] w-[400px] md77:w-[600px]  mx-auto relative md11:h-[480px] md11:w-[700px]" >
 
-                        <img  src={HeroSectionimaghe} />
+                        <img  className=" md11:absolute  w-[100%] object-cover bottom-[0px] " src={HeroSectionimaghe} />
                     </div>
                 </div>
             </div>

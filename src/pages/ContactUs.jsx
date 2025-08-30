@@ -72,7 +72,7 @@ export default function ContactUs() {
         {/* Hero Section with Medical Focus */}
         <div className="relative bg-white">
           <div className="absolute  to-transparent"></div>
-          <div className="relative max-w-7xl mx-auto px-6 py-20">
+          <div className="relative md77:max-w-7xl mx-auto md77:px-6 px-4 py-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="inline-flex items-center px-4 py-2 bg-[#062e9520] rounded-full text-sm font-medium text-[#062f95] mb-6">
@@ -85,25 +85,25 @@ export default function ContactUs() {
                   </svg>
                   Trusted Dental care Provider
                 </div>
-                <h1 className="text-5xl font-[600] text-gray-900 mb-7 leading-[46px]">
+                <h1 className="md11:text-5xl md77:text-4xl text-[30px] font-[700] leading-[30px] md77:font-[600] text-gray-900 mb-7 md77:leading-[46px]">
                   Expert Medical Care
                   <span style={{ color: "#062f95" }} className="block">
                     Just a Call Away
                   </span>
                 </h1>
-                <p className="text-[17px] md:text-[16px]    font-[400] leading-[1.8] md:leading-[23px] mb-10 max-w-3xl">
+                <p className="text-[17px] md11:text-[16px]    font-[400] leading-[1.8] md:leading-[23px] mb-10 max-w-3xl">
                   Connect with our team of experienced Dental care professionals. We’re here to provide personalized medical solutions,
                   expert guidance, and compassionate care to help you achieve optimal health outcomes and long-term wellness.
                 </p>
 
-                <div className="flex flex-wrap gap-4">
+                <div className="flex  gap-4">
                   <button
 
-                    className="px-8 py-3 bg-gradient-to-br from-[#1b2644] to-blue-600 text-white font-semibold rounded-[10px] hover:opacity-90 transition-opacity shadow-lg"
+                    className=" px-3 md77:px-8 py-3 bg-gradient-to-br md77:text-[16px] text-[13px] from-[#1b2644] to-blue-600 text-white font-semibold rounded-[10px] hover:opacity-90 transition-opacity shadow-lg"
                   >
                     Book Consultation
                   </button>
-                  <button className="px-8 py-3 border-2 border-gray-300 text-gray-700 font-semibold  rounded-[10px] hover:border-gray-400 transition-colors">
+                  <button className="px-3 md77:px-8 py-3 border-2 border-gray-300  md77:text-[16px] text-[13px] text-gray-700 font-semibold  rounded-[10px] hover:border-gray-400 transition-colors">
                     Emergency Contact
                   </button>
                 </div>
@@ -123,7 +123,7 @@ export default function ContactUs() {
 
         {/* Main Contact Section */}
         <div className="py-10">
-          <div className="md:w-[80%] mx-auto px-6">
+          <div className="md77:w-[80%] w-[98%] mx-auto px-3 md77:px-6">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 mb-4">Get in Touch with Our Medical Team</h2>
               <p className="text-md text-gray-600 max-w-3xl mx-auto">
@@ -135,7 +135,7 @@ export default function ContactUs() {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
               {/* Contact Form - Modern Medical Style */}
               <div className="lg:col-span-2">
-                <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+                <div className="bg-white rounded-2xl shadow-xl p-4 md77:p-8 border border-gray-100">
                   <div className="flex md:items-center mb-8">
                     <div
 
@@ -234,7 +234,7 @@ export default function ContactUs() {
                       ></textarea>
                     </div>
 
-                    <div className="flex items-center space-x-3 py-[10px] px-[10px]">
+                    <div className="flex md77:items-center space-x-3 py-[10px] px-[10px]">
                       <input type="checkbox" id="privacy" className="w-5 h-5 text-blue-600 rounded" />
                       <label htmlFor="privacy" className="text-sm text-gray-600">
                         I agree to the privacy policy and consent to medical data processing
@@ -383,7 +383,7 @@ export default function ContactUs() {
             </div>
 
             {/* Trust Indicators */}
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md11:grid-cols-4 gap-6">
               <div className="bg-white rounded-lg p-6 text-center shadow-lg border border-gray-100">
                 <div
                   style={{ backgroundColor: "#062f95" }}
