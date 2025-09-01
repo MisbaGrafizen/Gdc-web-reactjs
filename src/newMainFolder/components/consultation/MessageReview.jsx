@@ -39,6 +39,7 @@ const MessageReview = ({ formData, updateFormData, errors, updateErrors, onPrev,
       onConsultationSelect()
     }
   }
+  
 
   const isFormValid = formData.consents.accurateDetails && formData.consents.dataProcessing
 

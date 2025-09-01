@@ -7,6 +7,7 @@ import TreatmentMedical from "./consultation/TreatmentMedical"
 import PhotoUpload from "./consultation/PhotoUpload"
 import MessageReview from "./consultation/MessageReview"
 import Stepper from "./consultation/Stepper"
+import PlanSelect from "./consultation/Planselecte"
 
 const OnlineConsultation = ({ onPlanSelect }) => {
   const [currentStep, setCurrentStep] = useState(1)
@@ -60,25 +61,26 @@ const OnlineConsultation = ({ onPlanSelect }) => {
       setCurrentStep(currentStep - 1)
     }
   }
+  
 
-  const handleConsultationSelect = () => {
-    // Validate final step
-    const finalErrors = {}
-    if (!formData.consents.accurateDetails) {
-      finalErrors.accurateDetails = "Please confirm details are accurate"
-    }
-    if (!formData.consents.dataProcessing) {
-      finalErrors.dataProcessing = "Please consent to data processing"
-    }
-
-    if (Object.keys(finalErrors).length > 0) {
-      setErrors(finalErrors)
-      return
-    }
-
-    // Proceed to pricing
-    document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })
+const handleConsultationSelect = () => {
+  const finalErrors = {}
+  if (!formData.consents.accurateDetails) {
+    finalErrors.accurateDetails = "Please confirm details are accurate"
   }
+  if (!formData.consents.dataProcessing) {
+    finalErrors.dataProcessing = "Please consent to data processing"
+  }
+
+  if (Object.keys(finalErrors).length > 0) {
+    setErrors(finalErrors)
+    return
+  }
+
+  // Move to plan selection
+  setCurrentStep(5)
+}
+
 
   
 
@@ -127,6 +129,19 @@ const OnlineConsultation = ({ onPlanSelect }) => {
             onConsultationSelect={handleConsultationSelect}
           />
         )
+
+  case 5:
+  return (
+    <PlanSelect
+      onPrev={prevStep}
+      onNext={() => {
+        console.log("Submit to payment or handle pricing logic here")
+      }}
+    />
+  )
+
+
+
       default:
         return null
     }
