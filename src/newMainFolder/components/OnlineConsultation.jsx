@@ -80,6 +80,8 @@ const OnlineConsultation = ({ onPlanSelect }) => {
     document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })
   }
 
+  
+
   const renderStep = () => {
     switch (currentStep) {
       case 1:
