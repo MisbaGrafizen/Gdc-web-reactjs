@@ -35,13 +35,13 @@ const plans = [
   },
 ]
 
-export default function PlanSelect({ onPlanChosen }) {
+export default function PlanSelect({ onPrev, onNext, loading }) {
   const [selectedPlan, setSelectedPlan] = useState("essential")
 
   const handleSelect = (id) => setSelectedPlan(id)
 
   const handleNext = () => {
-    if (onPlanChosen) onPlanChosen(selectedPlan)
+    if (onNext) onNext(selectedPlan)
     // Scroll to payment or trigger next step
   }
 
@@ -114,13 +114,16 @@ export default function PlanSelect({ onPlanChosen }) {
       {/* NEXT Button */}
       <div className="text-center mt-12">
         <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.97 }}
-          onClick={handleNext}
-          className="bg-gradient-to-r from-blue-900 to-blue-600 text-white font-semibold px-8 py-3 rounded-full shadow-md hover:shadow-lg transition"
-        >
-          Continue to Payment
-        </motion.button>
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.97 }}
+  onClick={handleNext}
+  disabled={loading}
+  className={`${
+    loading ? "opacity-60 cursor-not-allowed" : ""
+  } bg-gradient-to-r from-blue-900 to-blue-600 text-white font-semibold px-8 py-3 rounded-full shadow-md hover:shadow-lg transition`}
+>
+  {loading ? "Submitting..." : "Continue to Payment"}
+</motion.button>
       </div>
     </div>
   )

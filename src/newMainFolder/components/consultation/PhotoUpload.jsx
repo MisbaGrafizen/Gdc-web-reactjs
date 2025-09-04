@@ -3,9 +3,11 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
 import { Camera, X, Info } from "lucide-react"
+import uploadToHPanel from "../../../helper/uploadToHpanel"
 
 const PhotoUpload = ({ formData, updateFormData, errors, updateErrors, onNext, onPrev }) => {
   const [localErrors, setLocalErrors] = useState({})
+
 
   const photoSlots = [
     { id: "frontRelaxed", label: "Front Relaxed Smile", tooltip: "Natural smile with lips slightly apart" },
@@ -18,10 +20,9 @@ const PhotoUpload = ({ formData, updateFormData, errors, updateErrors, onNext, o
     { id: "rightBite", label: "Right Bite", tooltip: "Bite view from the right side" },
   ]
 
-  const handlePhotoUpload = (e, slotId) => {
+  const handlePhotoUpload = async (e, slotId) => {
     const file = e.target.files[0]
     if (file) {
-      // Validate file
       const isValidType = ["image/jpeg", "image/png", "image/jpg"].includes(file.type)
       const isValidSize = file.size <= 25 * 1024 * 1024 // 25MB
 
@@ -35,18 +36,27 @@ const PhotoUpload = ({ formData, updateFormData, errors, updateErrors, onNext, o
         return
       }
 
-      // Clear error and update photo
       setLocalErrors((prev) => {
         const newErrors = { ...prev }
         delete newErrors[slotId]
         return newErrors
       })
 
-      const photos = { ...formData.photos }
-      photos[slotId] = file
-      updateFormData({ photos })
+      const uploadedUrl = await uploadToHPanel(file)
+
+      if (uploadedUrl) {
+        const photos = { ...formData.photos }
+        photos[slotId] = uploadedUrl // ✅ Save URL directly
+        updateFormData({ photos })
+      } else {
+        setLocalErrors((prev) => ({
+          ...prev,
+          [slotId]: "Upload failed. Try again.",
+        }))
+      }
     }
   }
+
 
   const removePhoto = (slotId) => {
     const photos = { ...formData.photos }
@@ -141,11 +151,10 @@ const PhotoUpload = ({ formData, updateFormData, errors, updateErrors, onNext, o
           whileTap={{ scale: 0.95 }}
           onClick={handleNext}
           disabled={!isFormValid}
-          className={`px-8 py-3 rounded-lg font-semibold transition-all ${
-            isFormValid
+          className={`px-8 py-3 rounded-lg font-semibold transition-all ${isFormValid
               ? "bg-gradient-to-br from-[#1b2644] to-blue-600  text-white shadow-lg hover:shadow-xl"
               : "bg-gray-300 text-gray-500 cursor-not-allowed"
-          }`}
+            }`}
         >
           Next Step
         </motion.button>
@@ -164,7 +173,7 @@ const PhotoSlot = ({ slot, photo, onUpload, onRemove, error }) => {
         {photo ? (
           <div className="relative">
             <img
-              src={URL.createObjectURL(photo) || "/placeholder.svg"}
+              src={photo instanceof File ? URL.createObjectURL(photo) : photo}
               alt={slot.label}
               className="w-full h-32 object-cover rounded-lg"
             />
